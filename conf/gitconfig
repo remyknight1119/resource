@@ -1,0 +1,27 @@
+[user]
+    name = jason
+    email = jasonchin221@163.com
+
+[alias]
+    co = checkout
+    ci = commit
+    dc = svn dcommit
+    st = status
+    di = diff
+    br = branch
+    oneline = log --pretty=oneline --since='2 days ago'
+    onelog = log -p -1
+
+[color]
+    status = auto
+    branch = auto
+    ui = true
+
+[http]
+	sslVerify = false
+
+[push]
+	default = simple
+
+[credential]
+	helper = store

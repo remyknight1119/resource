@@ -1,0 +1,60 @@
+# To disable qemu-kvm's page merging feature, set KSM_ENABLED=0 and
+# sudo restart qemu-kvm
+
+KSM_ENABLED=1
+SLEEP_MILLISECS=200
+
+# To load the vhost_net module, which in some cases can speed up
+# network performance, set VHOST_NET_ENABLED to 1.
+VHOST_NET_ENABLED=0
+
+# By default, enable nested kvm for intel cpus.  (AMD cpus always have
+# it enabled).  If you want to disable nested kvm, comment the first
+# line and uncomment the second.
+KVM_NESTED=" nested=1"
+#KVM_NESTED=""
+
+# Uncomment this if you want to specify a bridge for qemu-ifup to use
+# for tap devices
+TAPBR=virbr0
+
+if [ -z "$TAPBR" ]; then
+    switch=$(ip route list | awk '/^default / { print $5 }')
+    if [ ! -d "/sys/class/net/${switch}/bridge" ]; then
+        switch=virbr0
+    fi
+else
+    switch=$TAPBR
+fi
+unset has_br
+virif=`ls /sys/devices/virtual/net/`
+for vif in $virif
+do
+    if [ $vif = $switch ]; then
+        has_br='y'
+        break;
+    fi
+done
+
+unset ph_nic
+host_nics=`ifconfig | grep "Link encap" | awk '{print $1}'`
+for host_nic in $host_nics
+do
+	unset found
+	for vif in $virif
+	do
+		if [ $vif = $host_nic ]; then
+			found=y
+		fi
+	done
+	if [ -z $found ]; then
+		ph_nic=$host_nic
+		break;
+	fi
+done
+
+subnet=1.1.1.
+netmask=24
+if [ ! -z $ph_nic ]; then
+	host_ip=`ifconfig $ph_nic | grep -w inet | awk '{print $2}' | cut -d ':' -f 2`
+fi

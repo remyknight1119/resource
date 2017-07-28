@@ -1,0 +1,28 @@
+<Directory />
+Options FollowSymLinks
+AllowOverride None
+</Directory>
+
+SetEnv GIT_PROJECT_ROOT /git-repo/
+SetEnv GIT_HTTP_EXPORT_ALL
+ScriptAlias /git/ /usr/libexec/git-core/git-http-backend/
+
+ServerName localhost
+
+ProxyRequests Off
+ProxyVia Off
+ProxyPreserveHost On
+
+<Proxy *>
+Order deny,allow
+Allow from all
+</Proxy>
+
+<Location "/gerrit/login/">
+AuthType Basic
+AuthName "Gerrit Code Review"
+AuthBasicProvider file
+AuthUserFile /etc/gerrit.passwd
+Require valid-user
+</Location>
+ProxyPass /gerrit http://localhost:8081/gerrit

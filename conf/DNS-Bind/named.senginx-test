@@ -1,0 +1,14 @@
+$TTL 1D
+@	IN SOA	@ rname.invalid. (
+					0	; serial
+					1D	; refresh
+					1H	; retry
+					1W	; expire
+					3H )	; minimum
+	NS	@
+	A	127.0.0.1
+	AAAA	::1
+    IN      MX      10      senginx-test.com.
+www     IN      A       10.5.1.80
+;www     IN      A       10.5.1.81
+;www     IN      A       10.5.1.82

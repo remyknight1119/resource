@@ -1,0 +1,4 @@
+ethernet0.virtualDev = "e1000"
+ethernet1.virtualDev = "e1000"
+ethernet2.virtualDev = "e1000"
+ethernet3.virtualDev = "e1000"

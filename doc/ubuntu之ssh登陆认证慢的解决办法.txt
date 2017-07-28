@@ -1,0 +1,19 @@
+步骤一 关闭ssh的gssapi认证
+
+vi /etc/ssh/ssh_config
+注释掉如下两行
+GSSAPIAuthentication yes
+GSSAPIDelegateCredentials no
+
+
+步骤二 关闭ssh的UseDNS
+
+vi /etc/ssh/sshd_config
+注：ubuntu的sshd_config文件没有UseDNS参数,而据我了解,其它类*NIX、*BSD操作系统的sshd_config都有UseDNS参数，且它们缺省都是"UseDNS
+yes"，
+那估计ubuntu的sshd_config虽然没有UseDNS，那它缺省也是"UseDNS yes"了
+于是，在sshd_config末尾处插入如下行
+UseDNS no
+
+然后执行指令"/etc/init.d/ssh restart"，重启ssh服务，配置生效
+

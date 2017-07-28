@@ -1,0 +1,49 @@
+2.安装ctags.
+# cd /usr/ports/devel/ctags/
+# make install clean
+
+3.安装taglist.
+下载taglist
+URL:http://vim.sourceforge.net/scripts/download_script.php?src_id=7701
+解压:
+# cd /usr/local/share/vim/vim71/
+# unzip taglist_45.zip
+
+4.配置
+# cp /usr/local/share/vim/vim71/vimrc_example.vim ~/.vimrc
+
+PS:更多的配置选项请看说明,或到chinaunix.net ，C版跟贴问flw.
+
+
+The executable for Exuberant CTAGS is installed as %%PREFIX%%/bin/exctags
+
+由于ports安装的ctags已经包含ctags及Exuberant ctags,taglist需要Exuberant ctags,执行文件是exctags而不是ctags,所以需要修改taglist.vim.
+# vi /usr/local/share/vim/vim71/plugin/taglist.vim,在"if !exists('loaded_taglist')"前加一行.
+
+
+let Tlist_Ctags_Cmd = "/usr/local/bin/exctags"
+
+PS:在~/.vimrc添加亦可.
+
+5.生成tags文件
+# cd /usr/src/sbin/mount
+# exctags -R *
+
+
+
+
+
+1.FreeBSD中，如果默认安装了ctags,而且是Unix中的ctags，而非如今流行的功能加强的Exuberant Ctag。路径是在/usr/bin/。
+
+2.默认./configure,make,make install安装的Exuberant Ctags的路劲是在/usr/local/bin/,并且名字也为ctags。
+
+3.FreeBSD上默认行为安装的vim,没有配置文件.vimrc,需要自己动手建立.vimrc配置文件，安装taglist后，指定Tlist_Ctags_Cmd后，常常会忘记设置vim自动文件类型检测filetype on。
+
+以上三点，让本人纠结了一个上午，一度怀疑Exuberant Ctags是不是不支持FreeBSD，网上google，发现也有人在求助此类问题。所以在特地发文共勉。
+
+解决方法就是
+
+1.taglist的Tlist_Ctags_Cmd='/usr/local/bin/ctags'直接指定Exuberant Ctags的ctags可执行文件。
+
+2.vim的配置文件.vimrc中加上自动文件类型检测,filetype on。以保证taglist正常工作。
+

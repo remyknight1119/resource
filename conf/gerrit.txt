@@ -1,0 +1,13 @@
+java -jar /mnt/hgfs/jason/soft/gerrit-2.8.1.war init -d /home/gerrit/gerrit-review
+ln -s /home/gerrit/gerrit-review/bin/gerrit.sh /etc/init.d/
+vim /etc/default/gerritcodereview
+service gerrit.sh start
+chkconfig --level 345 gerrit.sh on 
+diff -Nru /home/gerrit/gerrit-review/etc/gerrit.config /mnt/hgfs/jason/resourcebackup-code/conf/gerrit.config 
+vim /home/gerrit/gerrit-review/etc/gerrit.config 
+service gerrit.sh restart
+yum install -y sendmail-cf
+service sendmail start
+chkconfig --level 345 sendmail
+service saslauthd start
+chkconfig --level 345 saslauthd 

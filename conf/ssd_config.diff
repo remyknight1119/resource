@@ -1,0 +1,35 @@
+--- /etc/ssh/sshd_config	2015-03-05 23:44:01.000000000 -0500
++++ sshd_config	2015-10-30 13:52:16.811758178 -0400
+@@ -51,12 +51,12 @@
+ #MaxAuthTries 6
+ #MaxSessions 10
+ 
+-#RSAAuthentication yes
+-#PubkeyAuthentication yes
++RSAAuthentication yes
++PubkeyAuthentication yes
+ 
+ # The default is to check both .ssh/authorized_keys and .ssh/authorized_keys2
+ # but this is overridden so installations will only check .ssh/authorized_keys
+-AuthorizedKeysFile	.ssh/authorized_keys
++#AuthorizedKeysFile	.ssh/authorized_keys
+ 
+ #AuthorizedPrincipalsFile none
+ 
+@@ -90,7 +90,7 @@
+ #KerberosUseKuserok yes
+ 
+ # GSSAPI options
+-GSSAPIAuthentication yes
++GSSAPIAuthentication no
+ GSSAPICleanupCredentials no
+ #GSSAPIStrictAcceptorCheck yes
+ #GSSAPIKeyExchange no
+@@ -127,6 +127,7 @@
+ #ClientAliveCountMax 3
+ #ShowPatchLevel no
+ #UseDNS yes
++UseDNS no
+ #PidFile /var/run/sshd.pid
+ #MaxStartups 10:30:100
+ #PermitTunnel no

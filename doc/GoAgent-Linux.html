@@ -1,0 +1,1984 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+            <title>GoAgent Linux - Paul Yang - ADSG Confluence</title>
+    
+        
+
+                        
+    
+                        
+    
+
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE,chrome=IE7">
+<meta charset="UTF-8">
+<!-- Deprecated since 3.4. To be removed in a future version of Confluence; use AJS.Confluence.getContextPath() -->
+<meta id="confluence-context-path" name="confluence-context-path" content="">
+<meta id="confluence-base-url" name="confluence-base-url" content="http://darkstar0:8090">
+
+<meta id="atlassian-token" name="atlassian-token" content="58943643f5e18d5c6b91130be3cc09c1e28e2153">
+
+<meta id="confluence-space-key" name="confluence-space-key" content="~yangyang">
+<script type="text/javascript">
+    // Deprecated global variables. To be removed in a future version of Confluence.
+    var contextPath = '';
+</script>
+
+    
+
+<!-- include system css resources -->
+
+
+    <!--[if lt IE 9]>
+<link data-atlassian-webresource-contents="confluence.web.resources:userlink[1.0],confluence.web.resources:master-styles[1.0],com.atlassian.auiplugin:ajs-gadgets-base[3.6.5],confluence.web.resources:page-ordering-tree[1.0],confluence.web.resources:aui-forms[1.0],com.atlassian.auiplugin:ajs[3.6.5],confluence.web.resources:icons[1.0],confluence.macros.profile:profile-macro-styles[1.0],confluence.web.resources:page-permissions-editor[1.0]" type="text/css" rel="stylesheet" href="/s/en_GB/3397/d976175803f1ca76369950eacde52f8cbf5a54d9.5/796/_/download/superbatch/css/batch.css?conditionalComment=lt+IE+9" media="all">
+<![endif]-->
+<link data-atlassian-webresource-contents="confluence.web.resources:print-styles[1.0],confluence.macros.advanced:get-more[2.1.2]" type="text/css" rel="stylesheet" href="GoAgent%20Linux_files/batch_003.css" media="print">
+<link data-atlassian-webresource-contents="confluence.web.resources:master-styles[1.0],confluence.web.resources:fancy-box[1.0],confluence.web.resources:content-styles[1.0],confluence.web.resources:page-move-resources[1.0],confluence.macros.advanced:get-more[2.1.2],confluence.web.resources:labels-editor[1.0],confluence.web.components:core[1.0],com.atlassian.auiplugin:ajs[3.6.5],com.atlassian.auiplugin:ajs-html5shim[3.6.5],confluence.macros.profile:network-resources-css[1.0],confluence.macros.profile:profile-macro-styles[1.0],confluence.web.resources:create-space[1.0],confluence.web.resources:panel-styles[1.0],com.atlassian.plugins.shortcuts.atlassian-shortcuts-module:shortcuts[1.0],com.atlassian.confluence.keyboardshortcuts:confluence-keyboard-shortcuts[4.3.6],confluence.web.resources:userlink[1.0],confluence.web.resources:view-content[1.0],confluence.web.resources:search-results-grid[1.0],confluence.web.resources:aui-forms[1.0],confluence.content.action.menu:linkpopup-resources[1.0],com.atlassian.confluence.plugins.gadgets:css[4.3.6],com.atlassian.auiplugin:ajs-gadgets-base[3.6.5],confluence.userstatus:userstatus-resources[1.0],confluence.web.resources:page-ordering-tree[1.0],confluence.web.resources:jquery-autocomplete[1.0],confluence.web.components:property-panel-css[1.0],confluence.web.resources:tooltip[1.0],com.atlassian.confluence.whatsnew:whats-new-resources[4.3.6],confluence.web.resources:ajs[1.0],confluence.macros.advanced:recently-updated-sidebar-resources[2.1.2],confluence.web.resources:icons[1.0],confluence.web.resources:dashboard-resources[1.0],confluence.web.resources:page-permissions-editor[1.0]" type="text/css" rel="stylesheet" href="GoAgent%20Linux_files/batch_006.css" media="all">
+<!--[if lte IE 9]>
+<link data-atlassian-webresource-contents="com.atlassian.auiplugin:ajs[3.6.5]" type="text/css" rel="stylesheet" href="/s/en_GB/3397/d976175803f1ca76369950eacde52f8cbf5a54d9.5/796/_/download/superbatch/css/batch.css?conditionalComment=lte+IE+9" media="all">
+<![endif]-->
+<!--[if IE 9]>
+<link data-atlassian-webresource-contents="com.atlassian.auiplugin:ajs-gadgets-base[3.6.5]" type="text/css" rel="stylesheet" href="/s/en_GB/3397/d976175803f1ca76369950eacde52f8cbf5a54d9.5/796/_/download/superbatch/css/batch.css?conditionalComment=IE+9" media="all">
+<![endif]-->
+<link data-atlassian-webresource-contents="confluence.web.resources:attachments[1.0],com.atlassian.confluence.plugins.view-source:view-source-menu-resources[4.3.6],com.atlassian.confluence.plugins.view-storage-format:view-storage-menu-resources[4.3.6],com.arsenale.plugins.invisibleink:invisibleink-style-resources[0.9.5],com.arsenale.plugins.lockpoint:lockpoint-global-resources[1.3.0],com.arsenale.plugins.lockpoint:lockpoint-style-resources[1.3.0],confluence.macros.core:flash-autosize[4.3.6],com.arsenale.plugins.lockpoint:lockpoint-pageblog-resources[1.3.0],com.atlassian.confluence.plugins.share-page:mail-page-resources[1.26],confluence.extra.attachments:attachments-javascript[3.4.0]" data-atlassian-webresource-contexts="page" type="text/css" rel="stylesheet" href="GoAgent%20Linux_files/batch_005.css" media="all">
+<!--[if lt IE 9]>
+<link data-atlassian-webresource-contents="com.atlassian.confluence.plugins.confluence-inline-tasks:inline-tasks-resources[4.3.6],com.atlassian.confluence.plugins.drag-and-drop:drag-and-drop-for-view-content[4.3.6],com.atlassian.confluence.plugins.jira.jira-connector:help-dialog-extension[1.4.2],com.atlassian.confluence.plugins.view-storage-format:view-comment-storage-resources[4.3.6],confluence.web.resources:view-comment[1.0],com.atlassian.auiplugin:jquery-ui-other[3.6.5],com.atlassian.confluence.plugins.confluence-like:content-like-resources[4.3.6],com.atlassian.confluence.plugins.confluence-mentions-plugin:help-dialog-extension[1.5.9],com.atlassian.confluence.plugins.confluence-sortable-tables:sortable-table-resources[4.3.6],com.atlassian.confluence.plugins.drag-and-drop:support[4.3.6]" data-atlassian-webresource-contexts="viewcontent" type="text/css" rel="stylesheet" href="/s/en_GB/3397/d976175803f1ca76369950eacde52f8cbf5a54d9.5/926cfa452a759f27878f7e06551748b0/_/download/contextbatch/css/viewcontent/batch.css?conditionalComment=lt+IE+9" media="all">
+<![endif]-->
+<link data-atlassian-webresource-contents="com.atlassian.confluence.plugins.confluence-inline-tasks:inline-tasks-resources[4.3.6],com.atlassian.confluence.plugins.drag-and-drop:drag-and-drop-for-view-content[4.3.6],com.atlassian.confluence.plugins.jira.jira-connector:help-dialog-extension[1.4.2],com.atlassian.confluence.plugins.view-storage-format:view-comment-storage-resources[4.3.6],confluence.web.resources:view-comment[1.0],com.atlassian.auiplugin:jquery-ui-other[3.6.5],com.atlassian.confluence.plugins.confluence-like:content-like-resources[4.3.6],com.atlassian.confluence.plugins.confluence-mentions-plugin:help-dialog-extension[1.5.9],com.atlassian.confluence.plugins.confluence-sortable-tables:sortable-table-resources[4.3.6],com.atlassian.confluence.plugins.drag-and-drop:support[4.3.6]" data-atlassian-webresource-contexts="viewcontent" type="text/css" rel="stylesheet" href="GoAgent%20Linux_files/batch_002.css" media="all">
+<link data-atlassian-webresource-contents="com.atlassian.confluence.plugins.editor-loader:background-loading-editor[4.3.6],com.atlassian.confluence.plugins.quickcomments:quick-comment-initial[4.3.6],com.atlassian.confluence.plugins.quickcomments:quick-comment-page[4.3.6]" data-atlassian-webresource-contexts="plugin.quick.comment.pre" type="text/css" rel="stylesheet" href="GoAgent%20Linux_files/batch.css" media="all">
+<link data-atlassian-webresource-contents="com.atlassian.confluence.plugins.confluence-inline-tasks:inline-tasks-styles[4.3.6],com.atlassian.confluence.plugins.jira.jira-connector:help-dialog-extension[1.4.2],com.atlassian.confluence.plugins.share-page:share-keyboard-shortcut-js-resources[1.26],com.gliffy.integration.confluence:gliffy-global-resources[4.5.7],com.atlassian.confluence.plugins.confluence-mentions-plugin:help-dialog-extension[1.5.9],com.atlassian.confluence.plugins.doctheme:splitter[4.3.6]" data-atlassian-webresource-contexts="main" type="text/css" rel="stylesheet" href="GoAgent%20Linux_files/batch_004.css" media="all">
+<link data-atlassian-webresource-contents="com.atlassian.mywork.mywork-confluence-host-plugin:mw-header-anchor[1.1.9]" type="text/css" rel="stylesheet" href="GoAgent%20Linux_files/com.css" media="all">
+<link type="text/css" rel="stylesheet" href="GoAgent%20Linux_files/colors.css" media="all">
+<link type="text/css" rel="stylesheet" href="GoAgent%20Linux_files/default-theme.css" media="all">
+<link type="text/css" rel="stylesheet" href="GoAgent%20Linux_files/fixedwidth.css" media="all">
+<link type="text/css" rel="stylesheet" href="GoAgent%20Linux_files/theme-colors.css" media="all">
+<link type="text/css" rel="stylesheet" href="GoAgent%20Linux_files/fixedwidth-ie.css" media="all">
+
+<!-- end system css resources -->
+
+    <meta name="confluence-request-time" content="1392250897693">
+<!-- Deprecated since 3.4. To be removed in a future version of Confluence; use atl.header -->
+        
+            <script type="text/x-template" title="share-content-popup">
+    <form action="#" method="post" class="aui share-content-popup">
+        <fieldset>
+            <label for="users">User name or email</label>
+            <div class="autocomplete-user-target">
+                <input class="text autocomplete-sharepage" id="users" data-max="10" data-dropdown-target=".autocomplete-user-target" data-none-message="No matching user or email found"/>
+            </div>
+            <ol class="recipients">
+            </ol>
+            <div><label for="note">Note</label></div>
+            <textarea class="textarea" id="note" placeholder="Add an optional note"/>
+        </fieldset>
+        <div class="button-panel">
+            <div class="progress-messages-icon"></div>
+            <div class="progress-messages">
+            </div>
+            <input class="button submit" type="submit" value="Share" disabled/>
+            <a class="close-dialog" href="#">Cancel</a>
+        </div>
+    </form>
+</script>
+
+<script type="text/x-template" title="share-content-popup-recipient-username">
+    <li data-username="{username}" style="display: none">
+        <span>
+            <img src="{thumbnailLink.href}" title="{title}">
+            <span>{title}</span>
+            <span class="remove-recipient"/>
+        </span>
+    </li>
+</script>
+
+<script type="text/x-template" title="share-content-popup-recipient-email">
+    <li data-email="{email}" style="display: none">
+        <span>
+            <img src="{icon}" title="{email}">
+            <span>{email}</span>
+            <span class="remove-recipient"/>
+        </span>
+    </li>
+</script>
+            <script type="text/x-template" title="gliffy-footer-webpanel">
+    <div class="gliffy-footer-webpanel"><span></span></div>
+</script>
+
+    
+        
+            <meta name="ajs-use-keyboard-shortcuts" content="true">
+            <meta name="ajs-keyboardshortcut-hash" content="c98c45caea5f1a674d508d239cbcd0a3">
+            
+    
+            
+    
+    
+            <meta name="ajs-page-id" content="141131778">
+            <meta name="ajs-page-title" content="GoAgent Linux">
+            <meta name="ajs-parent-page-title" content="Home">
+            <meta name="ajs-parent-page-id" content="3112992">
+            <meta name="ajs-space-key" content="~yangyang">
+            <meta name="ajs-space-name" content="Paul Yang">
+            <meta name="ajs-from-page-title" content="">
+            <meta name="ajs-browse-page-tree-mode" content="view">
+            <meta name="ajs-user-display-name" content="Jason Liu Yutao">
+            <meta name="ajs-context-path" content="">
+            <meta name="ajs-base-url" content="http://darkstar0:8090">
+            <meta name="ajs-version-number" content="4.3.6">
+            <meta name="ajs-build-number" content="3397">
+            <meta name="ajs-remote-user" content="yutao">
+            <meta name="ajs-static-resource-url-prefix" content="/confluence/s/en_GB/3397/d976175803f1ca76369950eacde52f8cbf5a54d9.5/_">
+            <meta name="ajs-global-settings-attachment-max-size" content="1000000000">
+            <meta name="ajs-user-locale" content="en_GB">
+            <meta name="ajs-enabled-dark-features" content="">
+            <meta name="ajs-atl-token" content="58943643f5e18d5c6b91130be3cc09c1e28e2153">
+            <meta name="ajs-confluence-flavour" content="VANILLA">
+            <meta name="ajs-editor.loader.resources" content="&lt;!--[if lt IE 9]&gt;
+&lt;link data-atlassian-webresource-excluded-contexts=&quot;viewcontent,page&quot; data-atlassian-webresource-contents=&quot;com.atlassian.confluence.plugins.confluence-paste:autoconvert-youtu.be-rewrite[4.3.6],com.atlassian.plugins.editor:atlassian-rte-javascript-translations[4.3.6],com.atlassian.confluence.plugins.profile-picture:profile-picture-editor_resources[1.6],confluence.web.resources:page-editor-css[1.0],com.atlassian.confluence.plugins.status-macro:editor_status[1.14],com.atlassian.applinks.applinks-plugin:applinks-util-js[3.8.0],com.atlassian.auiplugin:jquery-autocomplete[3.6.5],com.atlassian.plugins.editor:atlassian-rte-javascript-tinymce-core[4.3.6],com.atlassian.confluence.extra.officeconnector:macro-browser-smart-fields[2.1.12],com.atlassian.confluence.plugins.jira.jira-connector:proxy-js[1.4.2],com.atlassian.confluence.plugins.gadgets:macro-browser-for-gadgetsplugin[4.3.6],com.atlassian.confluence.plugins.confluence-paste:autoconvert-skitch[4.3.6],com.atlassian.gadgets.embedded:gadget-core-resources[3.2.0-m3],com.atlassian.confluence.tinymceplugin:editor-resources[4.3.6],com.atlassian.confluence.plugins.confluence-paste:autoconvert-cloudapp[4.3.6],com.atlassian.confluence.plugins.confluence-templates:template-editor-variables-resources[4.3.6],com.atlassian.confluence.plugins.confluence-mentions-plugin:editor-autocomplete-mentions-no-dependencies[1.5.9],com.atlassian.confluence.plugins.confluence-sortable-tables:ConfluenceSortableTablesEditorPlugin[4.3.6],com.atlassian.applinks.applinks-plugin:applinks-oauth-ui[3.8.0],com.atlassian.confluence.plugins.confluence-templates:template-editor-variables-template-resources[4.3.6],com.atlassian.confluence.ext.newcode-macro-plugin:editor-scripts[2.0.16],com.atlassian.confluence.plugins.confluence-paste:autoconvert-openphoto[4.3.6],confluence.web.resources:page-editor-js[1.0],com.atlassian.confluence.image.effects.ImageEffectsPlugin:propertiespanel[1.0.1],confluence.web.resources:draft-changes-js[1.0],confluence.macros.advanced:editor_includemacro[2.1.2],com.atlassian.confluence.plugins.confluence-paste:autoconvert-core[4.3.6],com.atlassian.confluence.tinymceplugin:editor-javascript-resources[4.3.6],com.gliffy.integration.confluence:gliffy-rte-resources[4.5.7],com.atlassian.confluence.tinymceplugin:editor-autocomplete-resources-only[4.3.6],com.atlassian.confluence.plugins.confluence-paste:autoconvert-google-redirect[4.3.6],com.atlassian.confluence.tinymceplugin:editor-css-resources[4.3.6],com.atlassian.plugins.editor:atlassian-rte-javascript[4.3.6],com.atlassian.plugins.editor:atlassian-rte-css[4.3.6],confluence.web.components:editor-notifications[1.0],com.arsenale.plugins.lockpoint:lockpoint-editor-resources[1.3.0],confluence.web.resources:jira-controls[1.0],confluence.web.resources:draft-changes[1.0],com.atlassian.confluence.plugins.drag-and-drop:drop-zone-for-image-dialog[4.3.6],nl.avisi.confluence.plugins.numberedheadings:nh-macro-browser-fields[2.0.4],com.atlassian.plugins.editor:atlassian-rte-resources[4.3.6],confluence.macros.core:macro-browser-smart-fields[4.3.6],com.atlassian.confluence.tinymceplugin:editor-autocomplete-resources[4.3.6],com.gliffy.integration.confluence:gliffy-editor-resources[4.5.7],com.atlassian.confluence.plugins.jira.jira-connector:dialogsJs[1.4.2],com.atlassian.confluence.keyboardshortcuts:confluence-tinymce-keyboard-shortcuts[4.3.6],com.atlassian.confluence.plugins.confluence-paste:paste-resources[4.3.6],confluence.web.resources:draft-changes-css[1.0],com.atlassian.confluence.plugins.confluence-paste:autoconvert-jira[4.3.6],confluence.web.resources:page-editor[1.0],com.atlassian.confluence.plugins.confluence-paste:autoconvert-confluence[4.3.6],com.atlassian.confluence.plugins.confluence-paste:autoconvert-widget-connector[4.3.6],nl.avisi.confluence.plugins.numberedheadings:nh-tinymce-js-resources[2.0.4],confluence.extra.jira:macro-browser-resources[4.0.17],com.atlassian.confluence.plugins.confluence-paste:autoconvert-shortcut-links[4.3.6],com.atlassian.confluence.plugins.confluence-mentions-plugin:editor-autocomplete-mentions[1.5.9],com.atlassian.plugins.editor:atlassian-rte-javascript-tinymce-extensions[4.3.6],confluence.editor.actions:editor-macro-browser[1.0],com.atlassian.confluence.plugins.drag-and-drop:drag-and-drop-for-editor[4.3.6],com.atlassian.confluence.extra.officeconnector:officeconnector-editor-resources[2.1.12]&quot; data-atlassian-webresource-contexts=&quot;editor,macro-browser&quot; type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;/s/en_GB/3397/d976175803f1ca76369950eacde52f8cbf5a54d9.5/ae912f1d8bdbac09151df7eb275da4cc/_/download/contextbatch/css/editor,macro-browser,-viewcontent,-page/batch.css?conditionalComment=lt+IE+9&quot; media=&quot;all&quot;&gt;
+&lt;![endif]--&gt;
+&lt;link data-atlassian-webresource-excluded-contexts=&quot;viewcontent,page&quot; data-atlassian-webresource-contents=&quot;com.atlassian.confluence.plugins.confluence-paste:autoconvert-youtu.be-rewrite[4.3.6],com.atlassian.plugins.editor:atlassian-rte-javascript-translations[4.3.6],com.atlassian.confluence.plugins.profile-picture:profile-picture-editor_resources[1.6],confluence.web.resources:page-editor-css[1.0],com.atlassian.confluence.plugins.status-macro:editor_status[1.14],com.atlassian.applinks.applinks-plugin:applinks-util-js[3.8.0],com.atlassian.auiplugin:jquery-autocomplete[3.6.5],com.atlassian.plugins.editor:atlassian-rte-javascript-tinymce-core[4.3.6],com.atlassian.confluence.extra.officeconnector:macro-browser-smart-fields[2.1.12],com.atlassian.confluence.plugins.jira.jira-connector:proxy-js[1.4.2],com.atlassian.confluence.plugins.gadgets:macro-browser-for-gadgetsplugin[4.3.6],com.atlassian.confluence.plugins.confluence-paste:autoconvert-skitch[4.3.6],com.atlassian.gadgets.embedded:gadget-core-resources[3.2.0-m3],com.atlassian.confluence.tinymceplugin:editor-resources[4.3.6],com.atlassian.confluence.plugins.confluence-paste:autoconvert-cloudapp[4.3.6],com.atlassian.confluence.plugins.confluence-templates:template-editor-variables-resources[4.3.6],com.atlassian.confluence.plugins.confluence-mentions-plugin:editor-autocomplete-mentions-no-dependencies[1.5.9],com.atlassian.confluence.plugins.confluence-sortable-tables:ConfluenceSortableTablesEditorPlugin[4.3.6],com.atlassian.applinks.applinks-plugin:applinks-oauth-ui[3.8.0],com.atlassian.confluence.plugins.confluence-templates:template-editor-variables-template-resources[4.3.6],com.atlassian.confluence.ext.newcode-macro-plugin:editor-scripts[2.0.16],com.atlassian.confluence.plugins.confluence-paste:autoconvert-openphoto[4.3.6],confluence.web.resources:page-editor-js[1.0],com.atlassian.confluence.image.effects.ImageEffectsPlugin:propertiespanel[1.0.1],confluence.web.resources:draft-changes-js[1.0],confluence.macros.advanced:editor_includemacro[2.1.2],com.atlassian.confluence.plugins.confluence-paste:autoconvert-core[4.3.6],com.atlassian.confluence.tinymceplugin:editor-javascript-resources[4.3.6],com.gliffy.integration.confluence:gliffy-rte-resources[4.5.7],com.atlassian.confluence.tinymceplugin:editor-autocomplete-resources-only[4.3.6],com.atlassian.confluence.plugins.confluence-paste:autoconvert-google-redirect[4.3.6],com.atlassian.confluence.tinymceplugin:editor-css-resources[4.3.6],com.atlassian.plugins.editor:atlassian-rte-javascript[4.3.6],com.atlassian.plugins.editor:atlassian-rte-css[4.3.6],confluence.web.components:editor-notifications[1.0],com.arsenale.plugins.lockpoint:lockpoint-editor-resources[1.3.0],confluence.web.resources:jira-controls[1.0],confluence.web.resources:draft-changes[1.0],com.atlassian.confluence.plugins.drag-and-drop:drop-zone-for-image-dialog[4.3.6],nl.avisi.confluence.plugins.numberedheadings:nh-macro-browser-fields[2.0.4],com.atlassian.plugins.editor:atlassian-rte-resources[4.3.6],confluence.macros.core:macro-browser-smart-fields[4.3.6],com.atlassian.confluence.tinymceplugin:editor-autocomplete-resources[4.3.6],com.gliffy.integration.confluence:gliffy-editor-resources[4.5.7],com.atlassian.confluence.plugins.jira.jira-connector:dialogsJs[1.4.2],com.atlassian.confluence.keyboardshortcuts:confluence-tinymce-keyboard-shortcuts[4.3.6],com.atlassian.confluence.plugins.confluence-paste:paste-resources[4.3.6],confluence.web.resources:draft-changes-css[1.0],com.atlassian.confluence.plugins.confluence-paste:autoconvert-jira[4.3.6],confluence.web.resources:page-editor[1.0],com.atlassian.confluence.plugins.confluence-paste:autoconvert-confluence[4.3.6],com.atlassian.confluence.plugins.confluence-paste:autoconvert-widget-connector[4.3.6],nl.avisi.confluence.plugins.numberedheadings:nh-tinymce-js-resources[2.0.4],confluence.extra.jira:macro-browser-resources[4.0.17],com.atlassian.confluence.plugins.confluence-paste:autoconvert-shortcut-links[4.3.6],com.atlassian.confluence.plugins.confluence-mentions-plugin:editor-autocomplete-mentions[1.5.9],com.atlassian.plugins.editor:atlassian-rte-javascript-tinymce-extensions[4.3.6],confluence.editor.actions:editor-macro-browser[1.0],com.atlassian.confluence.plugins.drag-and-drop:drag-and-drop-for-editor[4.3.6],com.atlassian.confluence.extra.officeconnector:officeconnector-editor-resources[2.1.12]&quot; data-atlassian-webresource-contexts=&quot;editor,macro-browser&quot; type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;/s/en_GB/3397/d976175803f1ca76369950eacde52f8cbf5a54d9.5/ae912f1d8bdbac09151df7eb275da4cc/_/download/contextbatch/css/editor,macro-browser,-viewcontent,-page/batch.css&quot; media=&quot;all&quot;&gt;
+&lt;script data-atlassian-webresource-excluded-contexts=&quot;viewcontent,page&quot; data-atlassian-webresource-contents=&quot;com.atlassian.confluence.plugins.confluence-paste:autoconvert-youtu.be-rewrite[4.3.6],com.atlassian.plugins.editor:atlassian-rte-javascript-translations[4.3.6],com.atlassian.confluence.plugins.profile-picture:profile-picture-editor_resources[1.6],confluence.web.resources:page-editor-css[1.0],com.atlassian.confluence.plugins.status-macro:editor_status[1.14],com.atlassian.applinks.applinks-plugin:applinks-util-js[3.8.0],com.atlassian.auiplugin:jquery-autocomplete[3.6.5],com.atlassian.plugins.editor:atlassian-rte-javascript-tinymce-core[4.3.6],com.atlassian.confluence.extra.officeconnector:macro-browser-smart-fields[2.1.12],com.atlassian.confluence.plugins.jira.jira-connector:proxy-js[1.4.2],com.atlassian.confluence.plugins.gadgets:macro-browser-for-gadgetsplugin[4.3.6],com.atlassian.confluence.plugins.confluence-paste:autoconvert-skitch[4.3.6],com.atlassian.gadgets.embedded:gadget-core-resources[3.2.0-m3],com.atlassian.confluence.tinymceplugin:editor-resources[4.3.6],com.atlassian.confluence.plugins.confluence-paste:autoconvert-cloudapp[4.3.6],com.atlassian.confluence.plugins.confluence-templates:template-editor-variables-resources[4.3.6],com.atlassian.confluence.plugins.confluence-mentions-plugin:editor-autocomplete-mentions-no-dependencies[1.5.9],com.atlassian.confluence.plugins.confluence-sortable-tables:ConfluenceSortableTablesEditorPlugin[4.3.6],com.atlassian.applinks.applinks-plugin:applinks-oauth-ui[3.8.0],com.atlassian.confluence.plugins.confluence-templates:template-editor-variables-template-resources[4.3.6],com.atlassian.confluence.ext.newcode-macro-plugin:editor-scripts[2.0.16],com.atlassian.confluence.plugins.confluence-paste:autoconvert-openphoto[4.3.6],confluence.web.resources:page-editor-js[1.0],com.atlassian.confluence.image.effects.ImageEffectsPlugin:propertiespanel[1.0.1],confluence.web.resources:draft-changes-js[1.0],confluence.macros.advanced:editor_includemacro[2.1.2],com.atlassian.confluence.plugins.confluence-paste:autoconvert-core[4.3.6],com.atlassian.confluence.tinymceplugin:editor-javascript-resources[4.3.6],com.gliffy.integration.confluence:gliffy-rte-resources[4.5.7],com.atlassian.confluence.tinymceplugin:editor-autocomplete-resources-only[4.3.6],com.atlassian.confluence.plugins.confluence-paste:autoconvert-google-redirect[4.3.6],com.atlassian.confluence.tinymceplugin:editor-css-resources[4.3.6],com.atlassian.plugins.editor:atlassian-rte-javascript[4.3.6],com.atlassian.plugins.editor:atlassian-rte-css[4.3.6],confluence.web.components:editor-notifications[1.0],com.arsenale.plugins.lockpoint:lockpoint-editor-resources[1.3.0],confluence.web.resources:jira-controls[1.0],confluence.web.resources:draft-changes[1.0],com.atlassian.confluence.plugins.drag-and-drop:drop-zone-for-image-dialog[4.3.6],nl.avisi.confluence.plugins.numberedheadings:nh-macro-browser-fields[2.0.4],com.atlassian.plugins.editor:atlassian-rte-resources[4.3.6],confluence.macros.core:macro-browser-smart-fields[4.3.6],com.atlassian.confluence.tinymceplugin:editor-autocomplete-resources[4.3.6],com.gliffy.integration.confluence:gliffy-editor-resources[4.5.7],com.atlassian.confluence.plugins.jira.jira-connector:dialogsJs[1.4.2],com.atlassian.confluence.keyboardshortcuts:confluence-tinymce-keyboard-shortcuts[4.3.6],com.atlassian.confluence.plugins.confluence-paste:paste-resources[4.3.6],confluence.web.resources:draft-changes-css[1.0],com.atlassian.confluence.plugins.confluence-paste:autoconvert-jira[4.3.6],confluence.web.resources:page-editor[1.0],com.atlassian.confluence.plugins.confluence-paste:autoconvert-confluence[4.3.6],com.atlassian.confluence.plugins.confluence-paste:autoconvert-widget-connector[4.3.6],nl.avisi.confluence.plugins.numberedheadings:nh-tinymce-js-resources[2.0.4],confluence.extra.jira:macro-browser-resources[4.0.17],com.atlassian.confluence.plugins.confluence-paste:autoconvert-shortcut-links[4.3.6],com.atlassian.confluence.plugins.confluence-mentions-plugin:editor-autocomplete-mentions[1.5.9],com.atlassian.plugins.editor:atlassian-rte-javascript-tinymce-extensions[4.3.6],confluence.editor.actions:editor-macro-browser[1.0],com.atlassian.confluence.plugins.drag-and-drop:drag-and-drop-for-editor[4.3.6],com.atlassian.confluence.extra.officeconnector:officeconnector-editor-resources[2.1.12]&quot; data-atlassian-webresource-contexts=&quot;editor,macro-browser&quot; type=&quot;text/javascript&quot; src=&quot;/s/en_GB/3397/d976175803f1ca76369950eacde52f8cbf5a54d9.5/ae912f1d8bdbac09151df7eb275da4cc/_/download/contextbatch/js/editor,macro-browser,-viewcontent,-page/batch.js&quot; &gt;&lt;/script&gt;
+">
+            <meta name="ajs-date.format" content="MMM dd, yyyy">
+    
+    <link rel="shortcut icon" href="http://darkstar0:8090/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="http://darkstar0:8090/favicon.ico">
+
+<link rel="search" type="application/opensearchdescription+xml" href="http://darkstar0:8090/opensearch/osd.action" title="ADSG Confluence">
+
+        <!-- include system javascript resources -->
+                        
+    
+    <!--[if lt IE 9]>
+<script data-atlassian-webresource-contents="com.atlassian.auiplugin:ajs-html5shim[3.6.5]" type="text/javascript" src="/s/en_GB/3397/d976175803f1ca76369950eacde52f8cbf5a54d9.5/796/_/download/superbatch/js/batch.js?conditionalComment=lt+IE+9" ></script>
+<![endif]-->
+<script data-atlassian-webresource-contents="confluence.web.resources:contentnamesearch[1.0],confluence.web.resources:fancy-box[1.0],confluence.web.resources:page-move-resources[1.0],confluence.macros.advanced:get-more[2.1.2],confluence.web.resources:labels-editor[1.0],confluence.web.resources:atlassian-effects[1.0],confluence.web.components:core[1.0],com.atlassian.auiplugin:ajs[3.6.5],confluence.web.resources:safe-ajax[1.0],confluence.aui.staging:dark-features[4.3.6],confluence.macros.profile:profile-macro-styles[1.0],com.atlassian.auiplugin:jquery-compatibility[3.6.5],confluence.web.resources:animation[1.0],confluence.web.resources:create-personal-space[1.0],com.atlassian.soy.soy-template-plugin:soy-deps[1.1.5],confluence.macros.advanced:get-more-helper[2.1.2],confluence.web.resources:create-space[1.0],com.atlassian.plugins.shortcuts.atlassian-shortcuts-module:shortcuts[1.0],com.atlassian.confluence.keyboardshortcuts:confluence-keyboard-shortcuts[4.3.6],com.atlassian.confluence.restplugin:confluence-rest[4.3.6],confluence.web.resources:userlink[1.0],com.atlassian.confluence.extra.officeconnector:editinoffice[2.1.12],confluence.web.resources:keygen[1.0],confluence.web.resources:view-content[1.0],confluence.web.components:property-panel-js[1.0],confluence.web.resources:search-results-grid[1.0],com.atlassian.auiplugin:jquery-lib[3.6.5],confluence.web.resources:jquery-json[1.0],confluence.web.resources:raphael[1.0],confluence.content.action.menu:linkpopup-resources[1.0],confluence.aui.staging:storage-manager[4.3.6],com.atlassian.auiplugin:ajs-gadgets-base[3.6.5],com.atlassian.confluence.plugins.gadgets:gadget-directory-resources[4.3.6],confluence.userstatus:userstatus-resources[1.0],confluence.web.resources:page-ordering-tree[1.0],confluence.web.resources:master-scripts[1.0],confluence.web.resources:breadcrumbs[1.0],confluence.web.resources:tooltip[1.0],com.atlassian.confluence.whatsnew:whats-new-resources[4.3.6],confluence.web.resources:ajs[1.0],confluence.aui.staging:meta[4.3.6],com.atlassian.auiplugin:aui-core[3.6.5],confluence.web.resources:page-permissions-editor[1.0]" type="text/javascript" src="GoAgent%20Linux_files/batch.js"></script>
+<!--[if lte IE 8]>
+<script data-atlassian-webresource-contents="com.atlassian.auiplugin:ajs[3.6.5]" type="text/javascript" src="/s/en_GB/3397/d976175803f1ca76369950eacde52f8cbf5a54d9.5/796/_/download/superbatch/js/batch.js?conditionalComment=lte+IE+8" ></script>
+<![endif]-->
+<script data-atlassian-webresource-contents="confluence.web.resources:attachments[1.0],com.atlassian.confluence.plugins.view-source:view-source-menu-resources[4.3.6],com.atlassian.confluence.plugins.view-storage-format:view-storage-menu-resources[4.3.6],com.arsenale.plugins.invisibleink:invisibleink-style-resources[0.9.5],com.arsenale.plugins.lockpoint:lockpoint-global-resources[1.3.0],com.arsenale.plugins.lockpoint:lockpoint-style-resources[1.3.0],confluence.macros.core:flash-autosize[4.3.6],com.arsenale.plugins.lockpoint:lockpoint-pageblog-resources[1.3.0],com.atlassian.confluence.plugins.share-page:mail-page-resources[1.26],confluence.extra.attachments:attachments-javascript[3.4.0]" data-atlassian-webresource-contexts="page" type="text/javascript" src="GoAgent%20Linux_files/batch_006.js"></script>
+<script data-atlassian-webresource-contents="com.atlassian.confluence.plugins.confluence-inline-tasks:inline-tasks-resources[4.3.6],com.atlassian.confluence.plugins.drag-and-drop:drag-and-drop-for-view-content[4.3.6],com.atlassian.confluence.plugins.confluence-inline-tasks:inline-tasks-styles[4.3.6],com.atlassian.confluence.plugins.share-page:share-keyboard-shortcut-js-resources[1.26],com.gliffy.integration.confluence:gliffy-global-resources[4.5.7],com.atlassian.confluence.plugins.confluence-like:content-like-resources[4.3.6],com.atlassian.confluence.plugins.doctheme:splitter[4.3.6],com.atlassian.confluence.plugins.jira.jira-connector:help-dialog-extension[1.4.2],com.atlassian.confluence.plugins.view-storage-format:view-comment-storage-resources[4.3.6],confluence.web.resources:view-comment[1.0],com.atlassian.auiplugin:jquery-ui-other[3.6.5],com.atlassian.confluence.plugins.confluence-mentions-plugin:help-dialog-extension[1.5.9],com.atlassian.confluence.plugins.confluence-sortable-tables:sortable-table-resources[4.3.6],com.atlassian.confluence.plugins.drag-and-drop:support[4.3.6]" data-atlassian-webresource-contexts="viewcontent,main" type="text/javascript" src="GoAgent%20Linux_files/batch_002.js"></script>
+<script data-atlassian-webresource-contents="com.atlassian.confluence.plugins.quickcomments:quick-comment-hide-traditional[4.3.6]" data-atlassian-webresource-contexts="atl.comments" type="text/javascript" src="GoAgent%20Linux_files/batch_004.js"></script>
+<script data-atlassian-webresource-contents="com.atlassian.confluence.plugins.editor-loader:background-loading-editor[4.3.6],com.atlassian.confluence.plugins.quickcomments:quick-comment-initial[4.3.6],com.atlassian.confluence.plugins.quickcomments:quick-comment-page[4.3.6]" data-atlassian-webresource-contexts="plugin.quick.comment.pre" type="text/javascript" src="GoAgent%20Linux_files/batch_005.js"></script>
+<script data-atlassian-webresource-contents="com.atlassian.plugins.navigation-link-plugin:rotp-menu[1.2]" data-atlassian-webresource-contexts="atl.general" type="text/javascript" src="GoAgent%20Linux_files/batch_003.js"></script>
+<script data-atlassian-webresource-contents="confluence.macros.profile:network-resources[1.0]" type="text/javascript" src="GoAgent%20Linux_files/confluence.js"></script>
+<script data-atlassian-webresource-contents="com.atlassian.mywork.mywork-confluence-host-plugin:mw-header-anchor[1.1.9]" type="text/javascript" src="GoAgent%20Linux_files/com.js"></script>
+
+    <script type="text/javascript" src="GoAgent%20Linux_files/fixedwidth.js"></script>
+
+    <!-- end system javascript resources -->
+    
+
+    
+    <link rel="canonical" href="http://darkstar0:8090/display/%7Eyangyang/GoAgent+Linux">
+    <link rel="shortlink" href="http://darkstar0:8090/x/AoBpC">
+    <meta name="wikilink" content="[~yangyang:GoAgent Linux]">
+    <meta name="page-version" content="2">
+
+<!--[if lt IE 9]>
+<link data-atlassian-webresource-excluded-contexts="viewcontent,page" data-atlassian-webresource-contents="com.atlassian.confluence.plugins.confluence-paste:autoconvert-youtu.be-rewrite[4.3.6],com.atlassian.plugins.editor:atlassian-rte-javascript-translations[4.3.6],com.atlassian.confluence.plugins.profile-picture:profile-picture-editor_resources[1.6],confluence.web.resources:page-editor-css[1.0],com.atlassian.confluence.plugins.status-macro:editor_status[1.14],com.atlassian.applinks.applinks-plugin:applinks-util-js[3.8.0],com.atlassian.auiplugin:jquery-autocomplete[3.6.5],com.atlassian.plugins.editor:atlassian-rte-javascript-tinymce-core[4.3.6],com.atlassian.confluence.extra.officeconnector:macro-browser-smart-fields[2.1.12],com.atlassian.confluence.plugins.jira.jira-connector:proxy-js[1.4.2],com.atlassian.confluence.plugins.gadgets:macro-browser-for-gadgetsplugin[4.3.6],com.atlassian.confluence.plugins.confluence-paste:autoconvert-skitch[4.3.6],com.atlassian.gadgets.embedded:gadget-core-resources[3.2.0-m3],com.atlassian.confluence.tinymceplugin:editor-resources[4.3.6],com.atlassian.confluence.plugins.confluence-paste:autoconvert-cloudapp[4.3.6],com.atlassian.confluence.plugins.confluence-templates:template-editor-variables-resources[4.3.6],com.atlassian.confluence.plugins.confluence-mentions-plugin:editor-autocomplete-mentions-no-dependencies[1.5.9],com.atlassian.confluence.plugins.confluence-sortable-tables:ConfluenceSortableTablesEditorPlugin[4.3.6],com.atlassian.applinks.applinks-plugin:applinks-oauth-ui[3.8.0],com.atlassian.confluence.plugins.confluence-templates:template-editor-variables-template-resources[4.3.6],com.atlassian.confluence.ext.newcode-macro-plugin:editor-scripts[2.0.16],com.atlassian.confluence.plugins.confluence-paste:autoconvert-openphoto[4.3.6],confluence.web.resources:page-editor-js[1.0],com.atlassian.confluence.image.effects.ImageEffectsPlugin:propertiespanel[1.0.1],confluence.web.resources:draft-changes-js[1.0],confluence.macros.advanced:editor_includemacro[2.1.2],com.atlassian.confluence.plugins.confluence-paste:autoconvert-core[4.3.6],com.atlassian.confluence.tinymceplugin:editor-javascript-resources[4.3.6],com.gliffy.integration.confluence:gliffy-rte-resources[4.5.7],com.atlassian.confluence.tinymceplugin:editor-autocomplete-resources-only[4.3.6],com.atlassian.confluence.plugins.confluence-paste:autoconvert-google-redirect[4.3.6],com.atlassian.confluence.tinymceplugin:editor-css-resources[4.3.6],com.atlassian.plugins.editor:atlassian-rte-javascript[4.3.6],com.atlassian.plugins.editor:atlassian-rte-css[4.3.6],confluence.web.components:editor-notifications[1.0],com.arsenale.plugins.lockpoint:lockpoint-editor-resources[1.3.0],confluence.web.resources:jira-controls[1.0],confluence.web.resources:draft-changes[1.0],com.atlassian.confluence.plugins.drag-and-drop:drop-zone-for-image-dialog[4.3.6],nl.avisi.confluence.plugins.numberedheadings:nh-macro-browser-fields[2.0.4],com.atlassian.plugins.editor:atlassian-rte-resources[4.3.6],confluence.macros.core:macro-browser-smart-fields[4.3.6],com.atlassian.confluence.tinymceplugin:editor-autocomplete-resources[4.3.6],com.gliffy.integration.confluence:gliffy-editor-resources[4.5.7],com.atlassian.confluence.plugins.jira.jira-connector:dialogsJs[1.4.2],com.atlassian.confluence.keyboardshortcuts:confluence-tinymce-keyboard-shortcuts[4.3.6],com.atlassian.confluence.plugins.confluence-paste:paste-resources[4.3.6],confluence.web.resources:draft-changes-css[1.0],com.atlassian.confluence.plugins.confluence-paste:autoconvert-jira[4.3.6],confluence.web.resources:page-editor[1.0],com.atlassian.confluence.plugins.confluence-paste:autoconvert-confluence[4.3.6],com.atlassian.confluence.plugins.confluence-paste:autoconvert-widget-connector[4.3.6],nl.avisi.confluence.plugins.numberedheadings:nh-tinymce-js-resources[2.0.4],confluence.extra.jira:macro-browser-resources[4.0.17],com.atlassian.confluence.plugins.confluence-paste:autoconvert-shortcut-links[4.3.6],com.atlassian.confluence.plugins.confluence-mentions-plugin:editor-autocomplete-mentions[1.5.9],com.atlassian.plugins.editor:atlassian-rte-javascript-tinymce-extensions[4.3.6],confluence.editor.actions:editor-macro-browser[1.0],com.atlassian.confluence.plugins.drag-and-drop:drag-and-drop-for-editor[4.3.6],com.atlassian.confluence.extra.officeconnector:officeconnector-editor-resources[2.1.12]" data-atlassian-webresource-contexts="editor,macro-browser" type="text/css" rel="stylesheet" href="/s/en_GB/3397/d976175803f1ca76369950eacde52f8cbf5a54d9.5/ae912f1d8bdbac09151df7eb275da4cc/_/download/contextbatch/css/editor,macro-browser,-viewcontent,-page/batch.css?conditionalComment=lt+IE+9" media="all">
+<![endif]--><link data-atlassian-webresource-excluded-contexts="viewcontent,page" data-atlassian-webresource-contents="com.atlassian.confluence.plugins.confluence-paste:autoconvert-youtu.be-rewrite[4.3.6],com.atlassian.plugins.editor:atlassian-rte-javascript-translations[4.3.6],com.atlassian.confluence.plugins.profile-picture:profile-picture-editor_resources[1.6],confluence.web.resources:page-editor-css[1.0],com.atlassian.confluence.plugins.status-macro:editor_status[1.14],com.atlassian.applinks.applinks-plugin:applinks-util-js[3.8.0],com.atlassian.auiplugin:jquery-autocomplete[3.6.5],com.atlassian.plugins.editor:atlassian-rte-javascript-tinymce-core[4.3.6],com.atlassian.confluence.extra.officeconnector:macro-browser-smart-fields[2.1.12],com.atlassian.confluence.plugins.jira.jira-connector:proxy-js[1.4.2],com.atlassian.confluence.plugins.gadgets:macro-browser-for-gadgetsplugin[4.3.6],com.atlassian.confluence.plugins.confluence-paste:autoconvert-skitch[4.3.6],com.atlassian.gadgets.embedded:gadget-core-resources[3.2.0-m3],com.atlassian.confluence.tinymceplugin:editor-resources[4.3.6],com.atlassian.confluence.plugins.confluence-paste:autoconvert-cloudapp[4.3.6],com.atlassian.confluence.plugins.confluence-templates:template-editor-variables-resources[4.3.6],com.atlassian.confluence.plugins.confluence-mentions-plugin:editor-autocomplete-mentions-no-dependencies[1.5.9],com.atlassian.confluence.plugins.confluence-sortable-tables:ConfluenceSortableTablesEditorPlugin[4.3.6],com.atlassian.applinks.applinks-plugin:applinks-oauth-ui[3.8.0],com.atlassian.confluence.plugins.confluence-templates:template-editor-variables-template-resources[4.3.6],com.atlassian.confluence.ext.newcode-macro-plugin:editor-scripts[2.0.16],com.atlassian.confluence.plugins.confluence-paste:autoconvert-openphoto[4.3.6],confluence.web.resources:page-editor-js[1.0],com.atlassian.confluence.image.effects.ImageEffectsPlugin:propertiespanel[1.0.1],confluence.web.resources:draft-changes-js[1.0],confluence.macros.advanced:editor_includemacro[2.1.2],com.atlassian.confluence.plugins.confluence-paste:autoconvert-core[4.3.6],com.atlassian.confluence.tinymceplugin:editor-javascript-resources[4.3.6],com.gliffy.integration.confluence:gliffy-rte-resources[4.5.7],com.atlassian.confluence.tinymceplugin:editor-autocomplete-resources-only[4.3.6],com.atlassian.confluence.plugins.confluence-paste:autoconvert-google-redirect[4.3.6],com.atlassian.confluence.tinymceplugin:editor-css-resources[4.3.6],com.atlassian.plugins.editor:atlassian-rte-javascript[4.3.6],com.atlassian.plugins.editor:atlassian-rte-css[4.3.6],confluence.web.components:editor-notifications[1.0],com.arsenale.plugins.lockpoint:lockpoint-editor-resources[1.3.0],confluence.web.resources:jira-controls[1.0],confluence.web.resources:draft-changes[1.0],com.atlassian.confluence.plugins.drag-and-drop:drop-zone-for-image-dialog[4.3.6],nl.avisi.confluence.plugins.numberedheadings:nh-macro-browser-fields[2.0.4],com.atlassian.plugins.editor:atlassian-rte-resources[4.3.6],confluence.macros.core:macro-browser-smart-fields[4.3.6],com.atlassian.confluence.tinymceplugin:editor-autocomplete-resources[4.3.6],com.gliffy.integration.confluence:gliffy-editor-resources[4.5.7],com.atlassian.confluence.plugins.jira.jira-connector:dialogsJs[1.4.2],com.atlassian.confluence.keyboardshortcuts:confluence-tinymce-keyboard-shortcuts[4.3.6],com.atlassian.confluence.plugins.confluence-paste:paste-resources[4.3.6],confluence.web.resources:draft-changes-css[1.0],com.atlassian.confluence.plugins.confluence-paste:autoconvert-jira[4.3.6],confluence.web.resources:page-editor[1.0],com.atlassian.confluence.plugins.confluence-paste:autoconvert-confluence[4.3.6],com.atlassian.confluence.plugins.confluence-paste:autoconvert-widget-connector[4.3.6],nl.avisi.confluence.plugins.numberedheadings:nh-tinymce-js-resources[2.0.4],confluence.extra.jira:macro-browser-resources[4.0.17],com.atlassian.confluence.plugins.confluence-paste:autoconvert-shortcut-links[4.3.6],com.atlassian.confluence.plugins.confluence-mentions-plugin:editor-autocomplete-mentions[1.5.9],com.atlassian.plugins.editor:atlassian-rte-javascript-tinymce-extensions[4.3.6],confluence.editor.actions:editor-macro-browser[1.0],com.atlassian.confluence.plugins.drag-and-drop:drag-and-drop-for-editor[4.3.6],com.atlassian.confluence.extra.officeconnector:officeconnector-editor-resources[2.1.12]" data-atlassian-webresource-contexts="editor,macro-browser" type="text/css" rel="stylesheet" href="GoAgent%20Linux_files/batch_007.css" media="all">
+            <meta name="ajs-content-type" content="comment">
+            <meta name="ajs-min-editor-height" content="150">
+            <meta name="ajs-editor-plugin-resource-prefix" content="/s/en_GB/3397/d976175803f1ca76369950eacde52f8cbf5a54d9.5/4.3.6/_">
+            <meta name="ajs-num-attachments" content="">
+            <meta name="ajs-auto-start" content="false">
+            <meta name="ajs-cancel-button-close-text" content="Close">
+            <meta name="ajs-content-id" content="141131778">
+            <meta name="ajs-action-locale" content="en_GB">
+            <meta name="ajs-save-drafts" content="false">
+            <meta name="ajs-use-inline-tasks" content="">
+            <meta name="ajs-heartbeat" content="true">
+            <meta name="ajs-cancel-button-discard-text" content="">
+            <meta name="ajs-draft-id" content="">
+            <meta name="ajs-new-page" content="">
+            <meta name="ajs-form-name" content="inlinecommentform">
+            <meta name="ajs-attachment-source-content-id" content="141131778">
+            <meta name="ajs-editor-mode" content="richtext">
+            <meta name="ajs-draft-type" content="">
+            <meta name="ajs-existing-draft-id" content="">
+            <meta name="ajs-can-attach-files" content="true">
+                
+            		    <meta name="ajs-max-thumb-width" content="300">
+		    <meta name="ajs-can-send-email" content="true">
+		    <meta name="ajs-is-dev-mode" content="false">
+		    <meta name="ajs-draft-save-interval" content="630000">
+		    <meta name="ajs-show-hidden-user-macros" content="true">
+		    <meta name="ajs-is-admin" content="true">
+		    <meta name="ajs-confluence.prefs.editor.disable.autocomplete" content="false">
+		    <meta name="ajs-confluence.prefs.editor.disable.autoformat" content="false">
+		    <meta name="ajs-heartbeat-interval" content="30000">
+	
+    </head>
+    
+<body onload="placeFocus()" id="com-atlassian-confluence" class="fixedwidth ">
+
+        
+    <ul id="assistive-skip-links" class="assistive">
+    <li><a href="#title-heading">Skip to content</a></li>
+    <li><a href="#breadcrumbs">Skip to breadcrumbs</a></li>
+    <li><a href="#header-menu-bar">Skip to header menu</a></li>
+    <li><a href="#navigation">Skip to action menu</a></li>
+    <li><a href="#quick-search-query">Skip to quick search</a></li>
+</ul>
+<div id="page">
+<div id="full-height-container">
+    <div id="header-precursor">
+        <div class="cell">
+            
+                        </div>
+    </div>
+            <div id="header" class="">
+    <div class="cell">
+                          
+    <form id="quick-search" class="quick-search" method="get" action="/dosearchsite.action">
+        <fieldset>
+            <label class="assistive" for="quick-search-query">Quick Search</label>
+            <input value="Search" id="quick-search-query" class="quick-search-query placeholded" accesskey="q" autocomplete="off" name="queryString" size="25" title="Quick Search ( Type '/' )" type="search">
+            <input id="quick-search-submit" class="quick-search-submit" value="Search" type="submit">
+            <div class="aui-dd-parent quick-nav-drop-down"></div>
+        </fieldset>
+        <div class="hidden parameters">
+                                        <!-- putMetadata failed to add value for key "quick-nav-enabled" so rendering metadata inline - see server debug log for details -->
+        <meta name="ajs-quick-nav-enabled" content="true">
+                                                    </div>
+    </form>
+        <ul id="header-menu-bar" class="ajs-menu-bar">
+                                                                
+            
+            <li class="normal ajs-menu-item">
+        <a id="browse-menu-link" class="browse trigger ajs-menu-title" href="#"><span><span>Browse</span></span></a>         <div style="" class="ajs-drop-down assistive" hidden="">
+                        <ul id="browse-menu-link-leading" class="section-leading first">
+                                        <li>
+    
+        
+    
+    <a id="space-pages-link" href="http://darkstar0:8090/pages/listpages.action?key=%7Eyangyang" class="" title="Browse pages in the Paul Yang space ( Type 'g' then 's' )">
+                   <span>Pages</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a id="space-blogposts-link" href="http://darkstar0:8090/pages/viewrecentblogposts.action?key=%7Eyangyang" class="" title="Browse blogs in the Paul Yang space">
+                   <span>Blog</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a id="space-templates-link" href="http://darkstar0:8090/pages/templates2/listpagetemplates.action?key=%7Eyangyang" class="" title="Browse and edit templates in the Paul Yang space">
+                   <span>Templates</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a id="space-labels-link" href="http://darkstar0:8090/labels/listlabels-heatmap.action?key=%7Eyangyang" class="" title="Browse labels in the Paul Yang space">
+                   <span>Labels</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a id="space-attachments-link" href="http://darkstar0:8090/spaces/listattachmentsforspace.action?key=%7Eyangyang" class="" title="Browse attachments in the Paul Yang space">
+                   <span>Attachments</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a href="http://darkstar0:8090/spaces/forums/spaceForums.action?key=%7Eyangyang" class="" title="">
+                   <span>Forums</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a id="space-advanced-link" href="http://darkstar0:8090/spaces/viewspacesummary.action?key=%7Eyangyang" class="" title="Browse additional space functions in the Paul Yang space">
+                   <span>Advanced</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a id="space-admin-link" href="http://darkstar0:8090/spaces/editspace.action?key=%7Eyangyang" class="" title="Administer the Paul Yang space">
+                   <span>Space Admin</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a id="paSpaceActions" href="http://darkstar0:8090/spaces/pageapprovalspace.action?key=%7Eyangyang&amp;spaceKey=%7Eyangyang" class="" title="">
+                   <span>Page Approval</span></a>        </li>
+                            </ul>
+                        <ul id="browse-menu-link-global" class="section-global">
+                                        <li>
+    
+        
+    
+    <a id="whats-new-menu-link" href="http://docs.atlassian.com/confluence/docs-43/whatsnew/iframe" class="" title="">
+                   <span>What’s New</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a id="people-directory-link" href="http://darkstar0:8090/peopledirectory.action" class="" title="Browse the Confluence people directory">
+                   <span>People Directory</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a id="space-directory-link" href="http://darkstar0:8090/spacedirectory/view.action" class="" title="Browse the Confluence space directory">
+                   <span>Space Directory</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a id="feed-builder-link" href="http://darkstar0:8090/dashboard/configurerssfeed.action" class="" title="Create your custom RSS feed.">
+                   <span>Feed Builder</span></a>        </li>
+                                        <li>
+    
+            
+    
+    <a id="keyboard-shortcuts-link" href="#" class="" title="View available keyboard shortcuts ( Type '?' )">
+                   <span>Keyboard Shortcuts</span></a>        </li>
+                                        <li>
+    
+            
+    
+    <a id="gadget-directory-link" href="#" class="user-item administration-link" title="Browse gadgets provided by Confluence">
+                   <span>Confluence Gadgets</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a id="administration-link" href="http://darkstar0:8090/admin/console.action" class="user-item administration-link" title="Manage and maintain Confluence">
+                   <span>Confluence Admin</span></a>        </li>
+                            </ul>
+                    </div>
+    </li>
+            
+                                                                        
+            <li class="normal ajs-menu-item">
+        <a id="user-menu-link" class="user trigger ajs-menu-title" href="#"><span><span>Jason Liu Yutao</span></span></a>         <div style="" class="ajs-drop-down assistive" hidden="">
+                        <ul id="user-menu-link-user-status" class="section-user-status first">
+                                        <li>
+        
+        
+    
+    <a id="set-user-status-link" href="http://darkstar0:8090/display/%7Eyutao" class="user-item update-user-status" title="Update your status">
+                   <span>Update Status…</span></a>        </li>
+                            </ul>
+                        <ul id="user-menu-link-user-preferences" class="section-user-preferences">
+                                        <li>
+    
+        
+    
+    <a id="view-personal-space-link" href="http://darkstar0:8090/display/%7Eyutao" class="user-item personal-space" title="">
+                   <span>Personal Space</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a id="view-user-history-link" href="http://darkstar0:8090/users/viewuserhistory.action" class="user-item user-history popup-link" title="">
+                   <span>Recently Viewed</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a href="http://darkstar0:8090/users/bubbles/user-community-profile.action" class="" title="">
+                   <span>My Communities</span></a>        </li>
+                            </ul>
+                        <ul id="user-menu-link-user-content" class="section-user-content">
+                                        <li>
+    
+        
+    
+    <a id="view-user-profile-link" href="http://darkstar0:8090/users/viewmyprofile.action" class="user-item user-profile" title="">
+                   <span>Profile</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a href="http://darkstar0:8090/users/viewfollow.action?username=yutao" class="follow-link" title="">
+                   <span>Network</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a href="http://darkstar0:8090/display/status/yutao/list" class="user-item list-user-status" title="">
+                   <span>Status Updates</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a id="user-favourites-link" href="http://darkstar0:8090/users/viewmyfavourites.action" class="user-item" title="">
+                   <span>Favourites</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a id="user-watches-link" href="http://darkstar0:8090/users/viewnotifications.action" class="user-item" title="">
+                   <span>Watches</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a id="user-drafts-link" href="http://darkstar0:8090/users/viewmydrafts.action" class="user-item" title="">
+                   <span>Drafts</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a id="user-settings-link" href="http://darkstar0:8090/users/viewmysettings.action" class="user-item" title="">
+                   <span>Settings</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a id="upm-requests-link" href="http://darkstar0:8090/plugins/servlet/upm/requests" class="" title="">
+                   <span>Atlassian Marketplace</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a id="speakeasy-user-link" href="http://darkstar0:8090/plugins/servlet/speakeasy/user" class="" title="">
+                   <span>Extensions</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a href="http://darkstar0:8090/users/bubbles/user-recent-edits.action" class="" title="">
+                   <span>Recent Edits</span></a>        </li>
+                            </ul>
+                        <ul id="user-menu-link-user-operations" class="section-user-operations">
+                                        <li>
+    
+        
+    
+    <a id="logout-link" href="http://darkstar0:8090/logout.action" class="user-item logout-link" title="">
+                   <span>Log Out</span></a>        </li>
+                            </ul>
+                    </div>
+    </li>
+                        <a title="New Notifications: 1 ( Type 'g' then 'n' )" href="#" id="notifications-anchor" class="mw-anchor unread"><div class="badge-i"><span class="badge-w"><span class="badge">1</span></span></div></a></ul>
+        
+    
+    <ol id="breadcrumbs">
+                    
+                        
+        <li class="first">
+                                    <span><a href="http://darkstar0:8090/dashboard.action" title="Go to Dashboard ( Type 'g' then 'd' )">Dashboard</a></span>
+                </li>
+                    
+                
+        <li>
+                                    <span><a href="http://darkstar0:8090/peopledirectory.action">People</a></span>
+                </li>
+                    
+                
+        <li>
+                                    <span><a href="http://darkstar0:8090/display/%7Eyangyang">Paul Yang</a></span>
+                </li>
+                                        <li id="ellipsis" title="Show all breadcrumbs"><span><strong>…</strong></span></li>
+                                    
+                
+        <li class="hidden-crumb">
+                                    <span><a href="http://darkstar0:8090/display/%7Eyangyang/Home">Home</a></span>
+                </li>
+                    
+                
+        <li>
+                                    <span><a href="http://darkstar0:8090/display/%7Eyangyang/GoAgent+Linux">GoAgent Linux</a></span>
+                </li>
+        </ol>
+
+    </div>
+</div>
+<!-- \#header -->    
+        <!-- \#header -->
+
+            
+    <div id="main" class="has-personal-sidebar">
+        <div id="main-header">
+            
+    <div id="navigation" class="content-navigation view">
+                    <ul class="ajs-menu-bar">
+                                <li class="ajs-button normal">
+    
+        
+    
+    <a id="editPageLink" href="http://darkstar0:8090/pages/editpage.action?pageId=141131778" class="edit" accesskey="e" title="Edit ( Type 'e' )">
+                   <span><u>E</u>dit</span></a>        </li>
+                    <li class="ajs-button normal">
+    
+            
+    
+    <a id="shareContentLink" href="#" class="share" title="Share this content by emailing other users ( Type 's' )">
+                   <span><u>S</u>hare</span></a>        </li>
+                    
+            <li class="normal ajs-menu-item">
+        <a id="add-menu-link" class="add trigger ajs-menu-title" href="#"><span><span>Add</span></span></a>         <div class="ajs-drop-down assistive" hidden="">
+                        <ul id="add-menu-link-space" class="section-space first">
+                                        <li>
+    
+        
+    
+    <a id="createPageLink" href="http://darkstar0:8090/pages/createpage.action?spaceKey=%7Eyangyang&amp;fromPageId=141131778" class="add-page" accesskey="p" title="Add a Page ( Type 'c' )">
+                   <span>Page</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a id="createPageLinkTemplate" href="http://darkstar0:8090/pages/createpage-choosetemplate.action?spaceKey=%7Eyangyang&amp;newSpaceKey=%7Eyangyang&amp;fromPageId=141131778" class="add-page-template" accesskey="p" title="Add a Page using a template">
+                   <span>Page from template</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a id="createBlogpostLink" href="http://darkstar0:8090/pages/createblogpost.action?spaceKey=%7Eyangyang" class="add-news" title="Add a Blog Post ( Type 'b' )">
+                   <span>Blog Post</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a href="http://darkstar0:8090/plugins/gliffy/launch.action?pageId=141131778" class="" title="">
+                    <span>
+                <img alt="Gliffy Diagram" src="GoAgent%20Linux_files/add_diagram_16.gif" title="Gliffy Diagram" height="16" width="16">
+                Gliffy Diagram
+            </span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a href="http://darkstar0:8090/plugins/servlet/mockups?do=add&amp;page=141131778" class="" title="">
+                    <span>
+                <img alt="UI Mockup" src="GoAgent%20Linux_files/addmockupicon.gif" title="UI Mockup" height="16" width="16">
+                UI Mockup
+            </span></a>        </li>
+                            </ul>
+                        <ul id="add-menu-link-page" class="section-page">
+                                        <li>
+    
+        
+    
+    <a id="add-comment-menu-link" href="http://darkstar0:8090/display/%7Eyangyang/GoAgent+Linux?showComments=true&amp;showCommentArea=true#addcomment" class="add-comment" title="Add a Comment ( Type 'm' )">
+                   <span>Comment</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a id="add-attachment-link" href="http://darkstar0:8090/pages/viewpageattachments.action?pageId=141131778" class="add-attachment" accesskey="a" title="Add an Attachment">
+                   <span>Attachment</span></a>        </li>
+                            </ul>
+                    </div>
+    </li>
+                    
+            <li class="normal ajs-menu-item">
+        <a id="action-menu-link" class="action trigger ajs-menu-title" href="#"><span><span>Tools</span></span></a>         <div class="ajs-drop-down most-right-menu-item assistive" hidden="">
+                        <ul id="action-menu-link-primary" class="section-primary first">
+                                        <li>
+    
+        
+    
+    <a id="view-attachments-link" href="http://darkstar0:8090/pages/viewpageattachments.action?pageId=141131778" class="action-view-attachments" accesskey="a" title="View Attachments ( Type 't' )">
+                   <span><u>A</u>ttachments (2)</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a id="action-view-history-link" href="http://darkstar0:8090/pages/viewpreviousversions.action?pageId=141131778" class="action-view-history" title="">
+                   <span>Page History</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a id="action-page-permissions-link" href="http://darkstar0:8090/pages/viewinfo.action?pageId=141131778" class="action-page-permissions" title="Edit restrictions">
+                   <span>Restrictions</span></a>        </li>
+                            </ul>
+                        <ul id="action-menu-link-marker" class="section-marker">
+                                        <li>
+    
+        
+    
+    <a id="page-favourite" href="http://darkstar0:8090/labels/addfavourite.action?entityId=141131778&amp;atl_token=58943643f5e18d5c6b91130be3cc09c1e28e2153" class="action-page-favourite" title="">
+                   <span>Favourite</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a id="page-watch" href="http://darkstar0:8090/pages/addpagenotification.action?pageId=141131778&amp;atl_token=58943643f5e18d5c6b91130be3cc09c1e28e2153" class="action-page-watching" title="">
+                   <span>Watch</span></a>        </li>
+                                        <li class="assistive">
+    
+        
+    
+    <a id="page-unwatch" href="http://darkstar0:8090/pages/removepagenotification.action?pageId=141131778&amp;atl_token=58943643f5e18d5c6b91130be3cc09c1e28e2153" class="action-page-watching selected ie-page-watching-selected inactive" title="">
+                   <span>Stop Watching</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a id="manage-watchers-menu-item" href="http://darkstar0:8090/pages/managepagenotifications.action?pageId=141131778" class="action-manage-watchers" title="Manage page watchers ( Type 'w' )">
+                   <span>Manage Watchers</span></a>        </li>
+                            </ul>
+                        <ul id="action-menu-link-secondary" class="section-secondary">
+                                        <li>
+    
+        
+    
+    <a id="view-page-info-link" href="http://darkstar0:8090/pages/viewinfo.action?pageId=141131778" class="action-view-info" title="">
+                   <span>Info</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a id="link-to-page-link" href="http://darkstar0:8090/pages/viewinfo.action?pageId=141131778" class="" title="Link to this Page ( Type 'k' )">
+                   <span>Link to this Page…</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a id="view-in-hierarchy-link" href="http://darkstar0:8090/pages/listpages-dirview.action?key=%7Eyangyang&amp;openId=141131778#selectedPageInHierarchy" class="" title="">
+                   <span>View in Hierarchy</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a id="action-view-source-link" href="http://darkstar0:8090/plugins/viewsource/viewpagesrc.action?pageId=141131778" class="action-view-source popup-link" title="">
+                   <span>View Source</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a id="action-view-storage-link" href="http://darkstar0:8090/plugins/viewstorage/viewpagestorage.action?pageId=141131778" class="action-view-storage view-storage-link popup-link" title="">
+                   <span>View Storage Format</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a href="http://darkstar0:8090/arsenaleinvisibleink/editpagesource.action?pageId=141131778&amp;atl_token=58943643f5e18d5c6b91130be3cc09c1e28e2153" class="arsenale-edit-wiki-link popup-link" title="">
+                   <span>Edit Storage Format</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a id="action-export-pdf-link" href="http://darkstar0:8090/spaces/flyingpdf/pdfpageexport.action?pageId=141131778" class="" title="">
+                   <span>Export to PDF</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a id="action-export-word-link" href="http://darkstar0:8090/exportword?pageId=141131778" class="action-export-word" title="">
+                   <span>Export to Word</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a id="import-word-doc" href="http://darkstar0:8090/pages/worddav/uploadimport.action?pageId=141131778" class="" title="">
+                   <span>Import Word Document</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a href="http://darkstar0:8090/pages/favourites/pagefavourites.action?pageId=141131778" class="" title="">
+                   <span>Favourites</span></a>        </li>
+                            </ul>
+                        <ul id="action-menu-link-modify" class="section-modify">
+                                        <li>
+    
+        
+    
+    <a id="action-copy-page-link" href="http://darkstar0:8090/pages/copypage.action?idOfPageToCopy=141131778&amp;spaceKey=%7Eyangyang" class="action-copy" title="">
+                   <span>Copy</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a id="action-move-page-dialog-link" href="http://darkstar0:8090/pages/viewpage.action?pageId=141131778" class="action-move" title="">
+                   <span>Move</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a id="action-remove-content-link" href="http://darkstar0:8090/pages/removepage.action?pageId=141131778" class="action-remove" title="">
+                   <span>Remove</span></a>        </li>
+                            </ul>
+                    </div>
+    </li>
+            </ul>
+    </div>
+
+            
+            <h1 id="title-heading" class="pagetitle">
+                                    <a data-user-hover-bound="true" title="" class="userLogoLink userlink-0" data-username="yangyang" href="http://darkstar0:8090/display/%7Eyangyang">
+               <img class="userLogo logo" src="GoAgent%20Linux_files/yangyang-61571-pp-new_head.png" alt="User icon: yangyang" title="">
+           </a>                
+                <span id="title-text">
+                                                <a href="http://darkstar0:8090/display/%7Eyangyang/GoAgent+Linux">GoAgent Linux</a>
+                                    </span>
+            </h1>
+        </div><!-- \#main-header -->
+
+        
+
+        <div id="sidebar-container">
+                                    <a href="#sidebar-end" class="assistive">Skip to end of sidebar</a>
+<div id="sidebar-start" class="assistive"></div>
+
+                    
+                    
+<div class="noprint" id="personal-info-sidebar">
+        
+    <a style="height: 653px;" href="#" class="sidebar-collapse"></a>
+    <div class="sidebar-content">
+                                    <div class="sidebar-section">
+            <a href="http://darkstar0:8090/users/viewuserprofile.action?username=yangyang" class="more-edit">More</a>
+            <h3 class="sidebar-heading">Profile</h3>
+            
+
+
+
+
+
+
+
+
+
+
+
+<div class="profile-macro">
+    <div class="vcard">
+        <a data-user-hover-bound="true" title="" class="userLogoLink userlink-0" data-username="yangyang" href="http://darkstar0:8090/display/%7Eyangyang">
+               <img class="userLogo logo" src="GoAgent%20Linux_files/yangyang-61571-pp-new_head.png" alt="User icon: yangyang" title="">
+           </a>        <div class="values">
+        <h4><a data-user-hover-bound="true" title="" href="http://darkstar0:8090/display/%7Eyangyang" class="url fn confluence-userlink userlink-0" data-username="yangyang">Paul Yang</a></h4>
+                    <a href="mailto:y_y@neusoft.com" title="Send Email to Paul Yang" class="email">y_y@neusoft.com</a>
+                            </div>
+            </div>
+    <table class="profile-info profile-full">
+                    <tbody>
+                                    <tr>
+                    <th>Phone:</th>
+                    <td>18640185490</td>
+                </tr>
+                                                <tr>
+                    <th>IM:</th>
+                    <td>QQ: 48516205</td>
+                </tr>
+                                                <tr>
+                    <th>Website:</th>
+                    <td><a href="http://infohunter.blog.chinaunix.net/" class="external-link" rel="nofollow">http://infohunter.blog.chinaunix.net</a></td>
+                </tr>
+                            </tbody>
+            <tbody>
+                                                                            </tbody>
+        </table>
+</div>
+
+        </div>
+
+        
+        <div class="sidebar-section">
+            <h3 class="sidebar-heading">Activity</h3>
+                
+
+<div class="recently-updated recently-updated-sidebar">
+
+    <div class="hidden parameters">
+    <input id="changesUrl" value="/plugins/recently-updated/changes.action?theme=sidebar&amp;pageSize=5&amp;startIndex=0&amp;authors=yangyang&amp;spaceKeys=*" type="hidden">
+</div>
+    <div class="results-container">
+        <ul>
+                    <li class="first update-item">
+        <span class="icon-container content-type-page"><a href="http://darkstar0:8090/display/%7Eyangyang/GoAgent+Linux" title="Paul Yang">GoAgent Linux</a></span>
+
+        <div class="update-item-desc-and-misc">
+            <div class="update-item-desc-and-date">updated Nov 29, 2013</div>
+                        <div class="update-item-changes">(<a href="http://darkstar0:8090/pages/diffpagesbyversion.action?pageId=141131778&amp;selectedPageVersions=2&amp;selectedPageVersions=1">view change</a>)</div>
+                    </div>
+    </li>
+        <li class=" update-item">
+        <span class="icon-container content-type-attachment-unknown"><a href="http://darkstar0:8090/pages/viewpageattachments.action?pageId=141131778&amp;highlight=SwitchyOptions.bak#GoAgent-attachment-SwitchyOptions.bak" title="">SwitchyOptions.bak</a></span>
+
+        <div class="update-item-desc-and-misc">
+            <div class="update-item-desc-and-date">attached Nov 29, 2013</div>
+                    </div>
+    </li>
+        <li class=" update-item">
+        <span class="icon-container content-type-attachment-zip"><a href="http://darkstar0:8090/pages/viewpageattachments.action?pageId=141131778&amp;highlight=goagent-goagent-v3.0.8-48-g26fe744.zip#GoAgent-attachment-goagent-goagent-v3.0.8-48-g26fe744.zip" title="">goagent-goagent-v3.0.8-48-g26fe744.zip</a></span>
+
+        <div class="update-item-desc-and-misc">
+            <div class="update-item-desc-and-date">attached Nov 29, 2013</div>
+                    </div>
+    </li>
+        <li class=" update-item">
+        <span class="icon-container content-type-comment"><a href="http://darkstar0:8090/display/DarkStar/Post?focusedCommentId=132743204#comment-132743204" title="">Post</a></span>
+
+        <div class="update-item-desc-and-misc">
+            <div class="update-item-desc-and-date">commented Sep 24, 2013</div>
+                    </div>
+    </li>
+        <li class=" update-item">
+        <span class="icon-container content-type-comment"><a href="http://darkstar0:8090/display/DarkStar/Post?focusedCommentId=132743203#comment-132743203" title="">Post</a></span>
+
+        <div class="update-item-desc-and-misc">
+            <div class="update-item-desc-and-date">commented Sep 24, 2013</div>
+                    </div>
+    </li>
+        <li class="more-link-container">
+    <a class="more-link more-link-base" href="http://darkstar0:8090/plugins/recently-updated/changes.action?theme=sidebar&amp;pageSize=5&amp;startHandle=com.atlassian.confluence.pages.Comment-132743202&amp;authors=yangyang&amp;spaceKeys=*&amp;contentType=-mail,page,comment,blogpost,attachment,userinfo,spacedesc,personalspacedesc,status,space,draft,custom">
+        <span class="more-link-text">More</span>&nbsp;
+        <img class="waiting-image hidden" alt="Please wait" src="GoAgent%20Linux_files/wait.html">
+    </a>
+</li>
+        </ul>
+    </div>
+
+</div>
+
+        </div>
+
+        <div class="sidebar-section">
+            <a href="http://darkstar0:8090/users/viewfollow.action?username=yangyang" class="more-edit">More</a>
+            <h3 class="sidebar-heading">Network</h3>
+                
+    
+
+<div class="network-macro follow-following follow-tiny">
+
+    
+                    <div class="description">Paul Yang is following 2 users</div>
+            
+    <ul class="avatars">
+            <li><a data-user-hover-bound="true" title="" class="userLogoLink userlink-1" data-username="cuij" href="http://darkstar0:8090/display/%7Ecuij">
+               <img class="userLogo logo" src="GoAgent%20Linux_files/cuij-2385-pp-imag0218.png" alt="User icon: cuij" title="">
+           </a></li>
+            <li><a data-user-hover-bound="true" title="" class="userLogoLink userlink-2" data-username="junhao" href="http://darkstar0:8090/display/%7Ejunhao">
+               <img class="userLogo logo" src="GoAgent%20Linux_files/junhao-72998-pp-1.png" alt="User icon: junhao" title="">
+           </a></li>
+        </ul>
+    
+        
+</div>
+
+                
+    
+
+<div class="network-macro follow-followers follow-tiny">
+
+    
+                    <div class="description">Paul Yang has 4 followers</div>
+            
+    <ul class="avatars">
+            <li><a data-user-hover-bound="true" title="" class="userLogoLink userlink-1" data-username="cuij" href="http://darkstar0:8090/display/%7Ecuij">
+               <img class="userLogo logo" src="GoAgent%20Linux_files/cuij-2385-pp-imag0218.png" alt="User icon: cuij" title="">
+           </a></li>
+            <li><img class="userLogo logo anonymous" src="GoAgent%20Linux_files/anonymous.html" alt="User icon: Anonymous" title="Anonymous"></li>
+            <li><a data-user-hover-bound="true" title="" class="userLogoLink userlink-2" data-username="junhao" href="http://darkstar0:8090/display/%7Ejunhao">
+               <img class="userLogo logo" src="GoAgent%20Linux_files/junhao-72998-pp-1.png" alt="User icon: junhao" title="">
+           </a></li>
+            <li><img class="userLogo logo anonymous" src="GoAgent%20Linux_files/anonymous.html" alt="User icon: Anonymous" title="Anonymous"></li>
+        </ul>
+    
+        
+</div>
+
+        </div>
+    </div>
+</div>
+                
+                
+
+<a href="#sidebar-start" class="assistive">Go to start of sidebar</a>
+<div id="sidebar-end" class="assistive"></div>
+                            </div><!-- \#sidebar-container -->
+
+        
+    
+
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                      
+
+
+
+
+        
+
+    
+    
+        
+    
+    
+                    
+    
+
+    
+
+
+<div id="content" class="page view">
+    
+
+<div id="action-messages">
+                        </div>
+
+
+
+    
+<script type="text/x-template" title="movePageDialog">
+    <div class="row information">
+        <div class="inner">
+            <div class="element">
+                Specify the new parent page for this page and its children by space and title.
+            </div>
+        </div>
+    </div>
+    <div class="form">
+        <fieldset>
+                
+
+    <legend class="assistive"><span>Change the Parent Page to a Known Page</span></legend>
+            <div class="row">
+                <label for="new-space">New space:</label>
+                <div class="value new-space-value">
+                    <input id="new-space-key" name="new-space-key" type="hidden" value="~yangyang">
+                                            <span class="space-input">
+                            <input id="new-space" name="new-space" value="Paul Yang">
+                        </span>
+                        <span class="description hidden">Start typing a space name to see a list of suggestions.</span>
+                                        <div class="new-space-dropdown aui-dd-parent autocomplete"></div>
+                </div>
+            </div>
+            <div class="row">
+                <label for="new-parent-page">New parent page:</label>
+                <div class="value new-parent-page-value">
+                    <span class="page-input">
+                        <input id="new-parent-page" name="new-parent-page" value="Home">
+                    </span>
+                    <span class="description">Start typing a page title to see a list of suggestions.</span>
+                    <div class="new-parent-page-dropdown aui-dd-parent autocomplete"></div>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+    <div class="location-info">
+        <div class="row">
+            <label>Current location:</label>
+            <div class="value breadcrumbs-container">
+                <div class="breadcrumbs-line">
+                    <ul id="current-parent-breadcrumbs" class="breadcrumbs">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <label>New location:</label>
+            <div class="value breadcrumbs-container">
+                <div class="breadcrumbs-line">
+                    <ul id="new-parent-breadcrumbs" class="breadcrumbs">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+
+<script type="text/x-template" title="movePageSearchPanel">
+    <div class="row information">
+        <div class="inner">
+            <div class="element">
+                Search for and select the new parent page for this page and its children.
+            </div>
+        </div>
+    </div>
+    <div id="move-page-search-container" class="row">
+        <div class="search-form">
+            <fieldset>
+                    
+
+    <legend class="assistive"><span>Search for a New Parent Page</span></legend>
+                    
+
+    <label  for="move-page-search-query" class="assistive">Search keywords</label>
+                <input class="search-query" id="move-page-search-query">
+                    
+
+    <label  for="move-page-search-space" class="assistive">Search in space</label>
+                                    <select id="move-page-search-space" class="search-space">
+                        <option value="conf_all" selected="selected">All Spaces</option>
+                        <option value="~yangyang">Paul Yang</option>
+                    </select>
+                                <input type="button" value="Search">
+                            </fieldset>
+        </div>
+        <div class="search-results">
+        </div>
+    </div>
+</script>
+<script type="text/x-template" title="searchResultsGrid">
+    <table>
+        <thead>
+            <tr class="header">
+                <th class="search-result-title">Page Title</th>
+                <th class="search-result-space">Space</th>
+                <th class="search-result-date">Updated</th>
+            </tr>
+        </thead>
+    </table>
+</script>
+<script type="text/x-template" title="searchResultsGridCount">
+    <p class="search-result-count">{0}</p>
+</script>
+<script type="text/x-template" title="searchResultsGridRow">
+    <tr class="search-result">
+        <th class="search-result-title"><a href="{1}" class="content-type-{2}"><span>{0}</span></a></th>
+        <td class="search-result-space"><a class="space" href="/display/{4}/" title="{3}">{3}</a></td>
+        <td class="search-result-date"><span class="date" title="{6}">{5}</span></td>
+    </tr>
+</script><!-- Start restrictions section -->
+<script type="text/x-template" title="page-permissions-div">
+<div id="page-permissions-div">
+    <div id="page-permissions-editor-form">
+
+                <div id="page-permissions-error-div" class="hidden">
+            <a href="#" id="permissions-error-div-close">Ok</a>
+            <div></div>
+        </div>
+
+                <div id="page-permissions-type-radios" class="page-permissions-label-rows">
+            <div>
+                <input id="restrictViewRadio" type="radio" checked="checked" name="pagePermissionTypeRadio" value="view"/>
+                <label for="restrictViewRadio">Restrict viewing of this page</label>
+                <input id="restrictEditRadio" type="radio" name="pagePermissionTypeRadio" value="edit"/>
+                <label for="restrictEditRadio">Restrict editing of this page</label>
+            </div>
+        </div>
+        <div id="page-permissions-input" class="page-permissions-label-rows">
+            <div class="page-permissions-label">To:</div>
+            <div id="page-permissions-chooser-box">
+                                    <span id="page-permissions-choose-me" class="ajs-button normal">
+                        <img class="permission-entity-picture" src="/download/attachments/4849692/sidai.jpg?version=1&amp;modificationDate=1330061938627&amp;api=v2" border="0" alt="Me" align="absmiddle"/>
+                        <a href="#">Me</a>
+                        <span class="remote-user-name hidden">yutao</span>
+                    </span>
+                                <span id="page-permissions-choose-user" class="ajs-button">
+                    
+
+
+
+    
+
+
+
+<a href="#" id='userpicker-popup-link-image' onClick="var picker = window.open('/spaces/openuserpicker.action?key=~yangyang&amp;startIndex=0&amp;onPopupSubmit=AJS.PagePermissions.addUserPermissions', 'EntitiesPicker', 'status=yes,resizable=yes,top=100,left=200,width=700,height=680,scrollbars=yes'); picker.focus(); return false;"><img src="/confluence/s/en_GB/3397/d976175803f1ca76369950eacde52f8cbf5a54d9.5/_/images/icons/user_16.gif" height=16 width=16 border=0 align="absmiddle"  title="Choose users" /></a>
+<a href="#" id='userpicker-popup-link-text' onClick="var picker = window.open('/spaces/openuserpicker.action?key=~yangyang&amp;startIndex=0&amp;onPopupSubmit=AJS.PagePermissions.addUserPermissions', 'EntitiesPicker', 'status=yes,resizable=yes,top=100,left=200,width=700,height=680,scrollbars=yes'); picker.focus(); return false;">Person...</a>
+
+
+                </span>
+                <span id="page-permissions-choose-group" class="ajs-button">
+                    
+
+
+
+    
+
+ 
+
+<a href="#" id='grouppicker-popup-link-image' onClick="var picker = window.open('/spaces/opengrouppicker.action?key=~yangyang&amp;startIndex=0&amp;actionName=dosearchgroups.action&amp;onPopupSubmit=AJS.PagePermissions.addGroupPermissions', 'EntitiesPicker', 'status=yes,resizable=yes,top=100,left=200,width=580,height=550,scrollbars=yes'); picker.focus(); return false;"><img src="/confluence/s/en_GB/3397/d976175803f1ca76369950eacde52f8cbf5a54d9.5/_/images/icons/group_16.gif" height=16 width=16 border=0 align="absmiddle"  title="Choose groups" /></a>
+<a href="#" id='grouppicker-popup-link-text' onClick="var picker = window.open('/spaces/opengrouppicker.action?key=~yangyang&amp;startIndex=0&amp;actionName=dosearchgroups.action&amp;onPopupSubmit=AJS.PagePermissions.addGroupPermissions', 'EntitiesPicker', 'status=yes,resizable=yes,top=100,left=200,width=580,height=550,scrollbars=yes'); picker.focus(); return false;">Group...</a>
+
+
+                </span>
+            </div>
+            <div id="page-permissions-input-box">
+                <input type="text" id="page-permissions-names-input" name="permissionNames"
+                    placeholder="Enter user or group name" class="autocomplete-user"
+                    data-max="10" data-none-message="No matches"
+                    data-target="#page-permissions-names-hidden" data-template="{username}"
+                    data-dropdown-target="#page-perms-name-dropdown-wrapper" data-resize-to-input="true"
+                    size="30"/>
+                <input
+    type="hidden"
+                            id="page-permissions-names-hidden"           />                <img height="16px" width="1px" src="/confluence/s/en_GB/3397/d976175803f1ca76369950eacde52f8cbf5a54d9.5/_/images/border/spacer.gif"/>
+                <input type="button" id="add-typed-names" value="Restrict">
+                <div id="page-perms-name-dropdown-wrapper" class="aui-dd-parent autocomplete"></div>
+            </div>
+        </div>
+    </div>
+    <div id="page-permissions-tables">
+        <div id="page-permissions-table-div">
+                        <table id="page-permissions-table" class="page-permissions-table">
+                <tr id="page-permissions-no-views" class="marker-row">
+                    <td colspan="3" class="page-permissions-marker-cell"><span>No view restrictions are defined for this page</span></td>
+                </tr>
+                <tr id="page-permissions-no-edits" class="marker-row">
+                    <td colspan="3" class="page-permissions-marker-cell"><span>No edit restrictions are defined for this page</span></td>
+                </tr>
+            </table>
+        </div>
+        <div id="page-inherited-permissions-table-div" class="hidden">
+            <span id="page-inherited-permissions-table-desc">
+                <a class="icon twisty-closed">Show/Hide</a>
+                <a id="toggle-inherited-permissions" title="Click to see inherited restrictions">This page has restricted parent pages. It can only be seen by users who can see those parent pages.</a>
+            </span>
+            <div id="page-inherited-permissions-tables" class="hidden page-inheritance-togglable"></div>
+        </div>
+    </div>
+</div>
+</script>
+
+<!-- End restrictions section -->
+
+        
+    
+    
+                                    
+                                
+                    
+                            
+    
+
+                    
+
+        
+        <a href="#page-metadata-end" class="assistive">Skip to end of metadata</a>
+<div id="page-metadata-start" class="assistive"></div>
+
+    <div class="page-metadata">
+        <ul>
+                            <li class="page-metadata-item noprint">
+    
+            
+    
+    <a id="content-metadata-page-restrictions" href="#" class="page-metadata-icon page-restrictions hidden" title="Page restrictions apply. Click the lock icon to view or edit the restriction.">
+                   <span>Page restrictions apply</span></a>        </li>
+                            <li class="page-metadata-item noprint">
+    
+        
+    
+    <a id="content-metadata-attachments" href="http://darkstar0:8090/pages/viewpageattachments.action?pageId=141131778&amp;metadataLink=true" class="page-metadata-icon action-view-attachments" accesskey="a" title="Attachments: 2">
+                   <span><span class="page-metadata-attachments-text">Attachments:</span><span class="page-metadata-attachments-count">2</span></span></a>        </li>
+                        <li class="page-metadata-modification-info">
+                                    Added by <a data-user-hover-bound="true" title="" href="http://darkstar0:8090/display/%7Eyangyang" class="url fn confluence-userlink userlink-0" data-username="yangyang">Paul Yang</a>, last edited by <a data-user-hover-bound="true" title="" href="http://darkstar0:8090/display/%7Eyangyang" class="url fn confluence-userlink userlink-0" data-username="yangyang">Paul Yang</a> on Nov 29, 2013
+                                                                <span class="noprint">&nbsp;(<a id="view-change-link" href="http://darkstar0:8090/pages/diffpages.action?pageId=141131778&amp;originalId=141131780">view change</a>)</span>
+                                                </li>
+                    </ul>
+                </div>
+
+
+<a href="#page-metadata-start" class="assistive">Go to start of metadata</a>
+<div id="page-metadata-end" class="assistive"></div>
+        
+                                
+        <div id="main-content" class="wiki-content">
+                           <p>步骤：</p><ol><li>去<a href="https://appengine.google.com/" class="external-link" rel="nofollow">https://appengine.google.com</a></li><li>使用gmail账户登录appengine，点击create application按钮</li><li>注册的过程中需要填写手机号码，然后能收到来自google的短信，填入验证码，如下：<br><img class="confluence-embedded-image confluence-external-resource" alt="goagent" src="GoAgent%20Linux_files/9ed5c127gw1dxcgwwpfh7j.jpg" data-image-src="http://ww3.sinaimg.cn/large/9ed5c127gw1dxcgwwpfh7j.jpg"></li><li>填写各项信息，如下图：<br><img class="confluence-embedded-image confluence-external-resource" alt="goagent教程详细版" src="GoAgent%20Linux_files/9ed5c127gw1dvf36kq67wj.jpg" data-image-src="http://ww2.sinaimg.cn/large/9ed5c127gw1dvf36kq67wj.jpg"></li><li>下载gae包，在这里：<a href="http://darkstar0:8090/download/attachments/141131778/goagent-goagent-v3.0.8-48-g26fe744.zip?version=1&amp;modificationDate=1385694510900&amp;api=v2">goagent-goagent-v3.0.8-48-g26fe744.zip</a></li><li>解压上述的zip包，并进入解压出来的目录，此目录中会有local和server两个目录</li><li>进入server目录，执行python uploader.zip，按步骤输入appID，gmail信箱地址和gmail的密码，成功的话会提示上传成功</li><li>进入local目录，编辑proxy.ini文件<ol><li>将[gae]下的appid = 改成之前注册的真实appid</li><li>如果需要使用https，则在[google_cn]下增加mode = https一行</li></ol></li><li>在local目录中，执行python proxy.py，这样在本机上会启动一个监听127.0.0.1:8086和8087两个端口的代理服务器</li><li>根据浏览器的不同，在浏览器中安装不同的插件：<ol><li>Firefox安装<a href="https://addons.mozilla.org/zh-cn/firefox/addon/foxyproxy-standard/" rel="nofollow" style="text-align: left;" class="external-link">FoxyProxy</a>插件，并手动设置代理信息，然后需要手动导入证书，导入证书的方法：<ol><li>打开FireFox-&gt;选项-&gt;高级-&gt;加密-&gt;查看证书-&gt;证书机构-&gt;导入证书, 选择local\ca.crt, 勾选所有项，导入。</li></ol></li><li>Chrome安装<a href="https://chrome.google.com/webstore/detail/dpplabbmogkhghncfbfdeeokoefdjegm" rel="nofollow" style="text-align: left;" class="external-link">SwitchySharp</a>插件，并在插件中导入此配置文件：<a href="http://darkstar0:8090/download/attachments/141131778/SwitchyOptions.bak?version=1&amp;modificationDate=1385694511023&amp;api=v2">SwitchyOptions.bak</a></li></ol></li><li>使用方法：<ol><li>Firefox，不清楚</li><li>Chrome，直接点击SwitchySharp插件在浏览器上的地球图标，然后选择GoAgent，不需要代理的时候，选择Direct Connection</li></ol></li></ol><p>其他：</p><p><a href="https://code.google.com/p/goagent/" class="external-link" rel="nofollow">https://code.google.com/p/goagent/</a>&nbsp;&nbsp;&nbsp; GoAgent的项目主页</p><p><a href="https://appengine.google.com/" class="external-link" rel="nofollow">https://appengine.google.com/</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Google应用的主页</p>
+    
+        </div>
+
+        <!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+         <rdf:Description
+    rdf:about="http://darkstar0:8090/display/~yangyang/GoAgent+Linux"
+    dc:identifier="http://darkstar0:8090/display/~yangyang/GoAgent+Linux"
+    dc:title="GoAgent Linux"
+    trackback:ping="http://darkstar0:8090/rpc/trackback/141131778"/>
+</rdf:RDF>
+-->
+
+                    <script type="text/x-template" title="labels-dialog-div">
+        <div id="labels-dialog">
+        <div class="labels-editor">
+            <form method="GET" action="" id="add-labels-form">
+                <div id="labelOperationErrorContainer">
+                    <span class="error"><span class="errorMessage" id="labelOperationErrorMessage"></span></span>
+                </div>
+    
+                <div id="label-input-fields">
+                    <input autocomplete="off" id="labelsString" name="labelsString" value="">
+                    <input id="add-labels-editor-button" type="submit" class="add-labels" value="Add">
+                </div>
+                <div id="labelsAutocompleteList" class="aui-dd-parent resize-to-input" style="width: 417px"></div>
+                <div id="dialog-label-list">
+                    <!-- DIV placeholder for labels list, is copied into in labels-dialog.js -->
+                </div>
+                <div id="waitImageAndStatus">
+                    <img class="waiting" alt="Please wait" src="/confluence/s/en_GB/3397/d976175803f1ca76369950eacde52f8cbf5a54d9.5/_/images/icons/wait.gif">&nbsp;
+                    <span id="labelOperationStatus" class="smalltext"></span>
+                </div>
+                <div class="labels-tip"></div>
+            </form>
+        </div>
+        <div style="display: none;">
+            <div class="labels-section-content content-column"
+    	    		entityid="141131778" entitytype="Page"
+    		>
+	<div class="labels-content">
+		
+
+<ul class="label-list">
+    <li class="no-labels-message-container">
+        <span id="labels-section-title-none" class="no-labels-message">
+            None
+        </span>
+    </li>
+                <li class="labels-edit-container"><a href="#" class="show-labels-editor editor-icon" title="Edit Labels">
+            <span class="icon icon-edit">Edit Labels</span>
+        </a></li>
+    </ul>
+    </div>
+</div>        </div>
+    </div>
+</script>
+                
+    
+
+
+<div id="likes-and-labels-container"><div id="likes-section"><a href="" class="like-button">Like</a><span class="like-summary">Be the first to like this</span></div><div id="labels-section" class="pageSection group">
+    <div class="labels-editor">
+        <span id="labels-section-title" class="label-title">Labels</span>
+        <div class="labels-section-content content-column" entityid="141131778" entitytype="Page">
+	<div class="labels-content">
+		
+
+<ul class="label-list">
+    <li class="no-labels-message-container">
+        <span id="labels-section-title-none" class="no-labels-message">
+            None
+        </span>
+    </li>
+                <li class="labels-edit-container"><a href="#" class="show-labels-editor editor-icon" title="Edit Labels ( Type 'l' )">
+            <span class="icon icon-edit">Edit Labels</span>
+        </a></li>
+    </ul>
+    </div>
+</div>    </div>
+</div></div>
+        
+            
+            
+
+
+
+
+            
+    
+
+
+
+
+
+
+
+
+                    
+    
+<div id="comments-section" class="pageSection group">
+    
+    
+    
+    
+            <div class="bottom-comment-panels comment-panels">
+                                    
+    
+
+
+    
+
+<div class="quick-comment-container comment add"><p class="comment-user-logo"><a data-user-hover-bound="true" title="" class="userLogoLink userlink-3" data-username="yutao" href="http://darkstar0:8090/display/%7Eyutao"><img class="userLogo logo" src="GoAgent%20Linux_files/sidai.png" alt="User icon: yutao" title=""></a></p><div class="quick-comment-vertical-spacer"></div><div class="quick-comment-body"><div class="quick-comment-loading-container" style="display:none;"><p class="quick-comment-loading-message">Loading the Editor</p></div><form style="display:block;" class="quick-comment-form" method="post" name="inlinecommentform" action="/pages/doaddcomment.action?pageId=141131778"><div title="Add a Comment ( Type 'm' )" class="quick-comment-prompt"><span>Write a comment…</span></div></form></div></div>
+
+            </div>
+    
+                        <div style="display: none;" id="comments-actions" class="aui-toolbar noprint">
+                <p class="toolbar-group">
+                    <span class="toolbar-item"><a href="http://darkstar0:8090/display/%7Eyangyang/GoAgent+Linux?showComments=true&amp;showCommentArea=true#addcomment" id="add-comment-rte" accesskey="m" class="toolbar-trigger">Add Comment</a></span>
+                </p>
+            </div>
+            </div>
+
+
+            
+</div>
+
+
+    
+
+
+
+    
+    
+
+    
+    
+    
+
+
+            
+    
+
+
+        <br class="clear">
+    </div><!-- \#main -->
+    
+    
+        
+            <div id="footer">
+                        
+    
+    <div class="gliffy-footer-webpanel"><span></span></div>
+<ul id="poweredby">
+        <li class="noprint">Powered by <a href="http://www.atlassian.com/software/confluence" class="hover-footer-link">Atlassian Confluence</a> <span id="footer-build-information">4.3.6</span>, the <a href="http://www.atlassian.com/software/confluence/tour/enterprise-wiki.jsp" class="hover-footer-link">Enterprise Wiki</a></li>
+        <li class="print-only">Printed by Atlassian Confluence 4.3.6, the Enterprise Wiki.</li>        
+        <li class="noprint"> &nbsp;·&nbsp; <a href="http://jira.atlassian.com/secure/BrowseProject.jspa?id=10470" class="hover-footer-link">Report a bug</a></li>
+        <li class="noprint"> &nbsp;·&nbsp; <a href="http://www.atlassian.com/about/connected.jsp?s_kwcid=Confluence-stayintouch" class="hover-footer-link">Atlassian News</a></li>
+    </ul>
+
+            
+    </div>
+    
+</div><!-- \#full-height-container -->
+</div><!-- \#page -->
+
+
+<div style="display: none;" id="content-hover-0" class="ajs-content-hover"><div style="width: 300px;" class="contents"></div></div><div style="display: none;" id="content-hover-1" class="ajs-content-hover"><div style="width: 300px;" class="contents"></div></div><div style="display: none;" id="content-hover-2" class="ajs-content-hover"><div style="width: 300px;" class="contents"></div></div><div style="display: none;" id="content-hover-3" class="ajs-content-hover"><div style="width: 300px;" class="contents"></div></div><div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap"><div id="fancybox-outer"><div class="fancybox-bg" id="fancybox-bg-n"></div><div class="fancybox-bg" id="fancybox-bg-ne"></div><div class="fancybox-bg" id="fancybox-bg-e"></div><div class="fancybox-bg" id="fancybox-bg-se"></div><div class="fancybox-bg" id="fancybox-bg-s"></div><div class="fancybox-bg" id="fancybox-bg-sw"></div><div class="fancybox-bg" id="fancybox-bg-w"></div><div class="fancybox-bg" id="fancybox-bg-nw"></div><div id="fancybox-content"></div><a id="fancybox-close"></a><div id="fancybox-title"></div><a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div></div><div style="display: none;" id="content-hover-shadow"><div class="tl"></div><div class="tr"></div><div class="l"></div><div class="r"></div><div class="bl"></div><div class="br"></div><div class="b"></div></div><div style="position: relative; z-index: 0;" id="fileuploadShim"></div><div class="plupload html5" style="position: absolute; background: none repeat scroll 0% 0% transparent; width: 1362px; height: 0px; overflow: hidden; z-index: -1; opacity: 0; top: 810px; left: 0px;" id="p18gk9th2tb8913u6qbi1gpg7bl0_html5_container"><input id="p18gk9th2tb8913u6qbi1gpg7bl0_html5" style="font-size: 999px; position: absolute; width: 100%; height: 100%;" accept="" multiple="multiple" type="file"></div><div id="inline-dialog-notifications-miniview" class="aui-inline-dialog"><div style="width: 500px;" class="contents"><iframe id="notifications-miniview-iframe" src="GoAgent%20Linux_files/notifications-miniview.html" frameborder="0"></iframe></div><div id="arrow-notifications-miniview" class="arrow"></div></div><div id="editor-preload-container" style="display: none;">
+                                                                                                            
+
+<script type="text/x-template" title="editor-css">
+    <link data-atlassian-webresource-contents="confluence.web.resources:panel-styles[1.0]" type="text/css" rel="stylesheet" href="/s/en_GB/3397/d976175803f1ca76369950eacde52f8cbf5a54d9.5/1.0/_/download/batch/confluence.web.resources:panel-styles/confluence.web.resources:panel-styles.css" media="all">
+<link data-atlassian-webresource-contents="confluence.web.resources:content-styles[1.0]" type="text/css" rel="stylesheet" href="/s/en_GB/3397/d976175803f1ca76369950eacde52f8cbf5a54d9.5/1.0/_/download/batch/confluence.web.resources:content-styles/confluence.web.resources:content-styles.css" media="all">
+<link data-atlassian-webresource-contents="confluence.web.resources:panel-styles[1.0]" type="text/css" rel="stylesheet" href="/s/en_GB/3397/d976175803f1ca76369950eacde52f8cbf5a54d9.5/1.0/_/download/batch/confluence.web.resources:panel-styles/confluence.web.resources:panel-styles.css" media="all">
+<link data-atlassian-webresource-contents="nl.avisi.confluence.plugins.numberedheadings:nh-tinymce-css-resources[2.0.4]" type="text/css" rel="stylesheet" href="/s/en_GB/3397/d976175803f1ca76369950eacde52f8cbf5a54d9.5/2.0.4/_/download/batch/nl.avisi.confluence.plugins.numberedheadings:nh-tinymce-css-resources/nl.avisi.confluence.plugins.numberedheadings:nh-tinymce-css-resources.css" media="all">
+<link data-atlassian-webresource-contents="com.atlassian.confluence.plugins.status-macro:editor_content_status[1.14]" type="text/css" rel="stylesheet" href="/s/en_GB/3397/d976175803f1ca76369950eacde52f8cbf5a54d9.5/1.14/_/download/batch/com.atlassian.confluence.plugins.status-macro:editor_content_status/com.atlassian.confluence.plugins.status-macro:editor_content_status.css" media="all">
+<link data-atlassian-webresource-contents="com.atlassian.confluence.plugins.confluence-templates:variable-editor-content-styles[4.3.6]" type="text/css" rel="stylesheet" href="/s/en_GB/3397/d976175803f1ca76369950eacde52f8cbf5a54d9.5/4.3.6/_/download/batch/com.atlassian.confluence.plugins.confluence-templates:variable-editor-content-styles/com.atlassian.confluence.plugins.confluence-templates:variable-editor-content-styles.css" media="all">
+<link data-atlassian-webresource-contents="com.atlassian.confluence.plugins.confluence-inline-tasks:inline-tasks-styles[4.3.6]" type="text/css" rel="stylesheet" href="/s/en_GB/3397/d976175803f1ca76369950eacde52f8cbf5a54d9.5/4.3.6/_/download/batch/com.atlassian.confluence.plugins.confluence-inline-tasks:inline-tasks-styles/com.atlassian.confluence.plugins.confluence-inline-tasks:inline-tasks-styles.css" media="all">
+<link data-atlassian-webresource-contents="com.atlassian.confluence.tinymceplugin:editor-content-styles[4.3.6]" type="text/css" rel="stylesheet" href="/s/en_GB/3397/d976175803f1ca76369950eacde52f8cbf5a54d9.5/4.3.6/_/download/batch/com.atlassian.confluence.tinymceplugin:editor-content-styles/com.atlassian.confluence.tinymceplugin:editor-content-styles.css" media="all">
+<link type="text/css" rel="stylesheet" href="/s/en_GB/3397/d976175803f1ca76369950eacde52f8cbf5a54d9.5/5/_/styles/colors.css" media="all">
+<link type="text/css" rel="stylesheet" href="/s/en_GB/3397/d976175803f1ca76369950eacde52f8cbf5a54d9.5/1.0/_/download/resources/com.atlassian.confluence.themes.default:styles/default-theme.css" media="all">
+
+</script>
+
+    
+
+
+
+
+
+
+
+
+
+
+<div class="editor-container">
+
+        
+            
+
+
+
+
+
+
+
+
+
+
+        <div id="toolbar">
+
+        <div id="rte-toolbar" class="aui-toolbar">
+
+            <div class="toolbar-split toolbar-split-left">
+                <ul class="toolbar-group">
+                                        <li id="format-dropdown" class="toolbar-item toolbar-dropdown">
+                        <div class="aui-dd-parent">
+                            <a id="format-dropdown-display" href="#" class="toolbar-trigger aui-dd-trigger" data-control-id="formatselect">
+                                <span class="dropdown-text">Paragraph</span>
+                                    <span class="icon icon-dropdown "></span>
+                            </a>
+                            <ul class="aui-dropdown hidden">
+                                    <li class="dropdown-item format-p" data-format="p">
+        <a class="item-link" href="#" title="Paragraph (Ctrl+0)">Paragraph</a>
+    </li>
+                                    <li class="dropdown-item format-h1" data-format="h1">
+        <a class="item-link" href="#" title="Heading 1 (Ctrl+1)">Heading 1</a>
+    </li>
+                                    <li class="dropdown-item format-h2" data-format="h2">
+        <a class="item-link" href="#" title="Heading 2 (Ctrl+2)">Heading 2</a>
+    </li>
+                                    <li class="dropdown-item format-h3" data-format="h3">
+        <a class="item-link" href="#" title="Heading 3 (Ctrl+3)">Heading 3</a>
+    </li>
+                                    <li class="dropdown-item format-h4" data-format="h4">
+        <a class="item-link" href="#" title="Heading 4 (Ctrl+4)">Heading 4</a>
+    </li>
+                                    <li class="dropdown-item format-h5" data-format="h5">
+        <a class="item-link" href="#" title="Heading 5 (Ctrl+5)">Heading 5</a>
+    </li>
+                                    <li class="dropdown-item format-h6" data-format="h6">
+        <a class="item-link" href="#" title="Heading 6 (Ctrl+6)">Heading 6</a>
+    </li>
+                                    <li class="dropdown-item format-pre" data-format="pre">
+        <a class="item-link" href="#" title="Preformatted (Ctrl+7)">Preformatted</a>
+    </li>
+                                    <li class="dropdown-item format-blockquote" data-format="blockquote">
+        <a class="item-link" href="#" title="Quote (Ctrl+8)">Quote</a>
+    </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="toolbar-group">
+                    
+                <li class="toolbar-item" id="rte-button-bold">
+        <a class="toolbar-trigger" href="#" title="Bold (Ctrl+B)" data-control-id="bold">
+                <span class="icon icon-bold ">Bold</span>
+        </a>
+    </li>
+                    
+                <li class="toolbar-item" id="rte-button-italic">
+        <a class="toolbar-trigger" href="#" title="Italic (Ctrl+I)" data-control-id="italic">
+                <span class="icon icon-italic ">Italic</span>
+        </a>
+    </li>
+                    
+                <li class="toolbar-item" id="rte-button-underline">
+        <a class="toolbar-trigger" href="#" title="Underline (Ctrl+U)" data-control-id="underline">
+                <span class="icon icon-underline ">Underline</span>
+        </a>
+    </li>
+                    <li class="toolbar-item toolbar-splitbutton" id="color-picker-control">
+                        <a class="toolbar-trigger" href="#" id="rte-button-color" title="Colour" data-color="003366">
+                            <span class="icon icon-textcolor"></span>
+                            <span class="selected-color"></span>
+                        </a>
+                        <div class="aui-dd-parent">
+                            <a class="toolbar-trigger aui-dd-trigger" href="#" id="rte-button-color-selector" data-control-id="colorSelector" title="More colours">
+                                    <span class="icon icon-dropdown ">More colours</span>
+                            </a>
+                            <div class="color-picker-container">
+                                <div class="color-picker aui-dropdown hidden">
+                                    <ul>
+            <li><a href="#" style="background-color: #000000" data-color="000000">&nbsp;</a></li>
+            <li><a href="#" style="background-color: #993300" data-color="993300">&nbsp;</a></li>
+            <li><a href="#" style="background-color: #333300" data-color="333300">&nbsp;</a></li>
+            <li><a href="#" style="background-color: #003300" data-color="003300">&nbsp;</a></li>
+            <li><a href="#" style="background-color: #003366" data-color="003366">&nbsp;</a></li>
+            <li><a href="#" style="background-color: #000080" data-color="000080">&nbsp;</a></li>
+            <li><a href="#" style="background-color: #333399" data-color="333399">&nbsp;</a></li>
+            <li><a href="#" style="background-color: #333333" data-color="333333">&nbsp;</a></li>
+            <li><a href="#" style="background-color: #800000" data-color="800000">&nbsp;</a></li>
+            <li><a href="#" style="background-color: #FF6600" data-color="FF6600">&nbsp;</a></li>
+            <li><a href="#" style="background-color: #808000" data-color="808000">&nbsp;</a></li>
+            <li><a href="#" style="background-color: #008000" data-color="008000">&nbsp;</a></li>
+            <li><a href="#" style="background-color: #008080" data-color="008080">&nbsp;</a></li>
+            <li><a href="#" style="background-color: #0000FF" data-color="0000FF">&nbsp;</a></li>
+            <li><a href="#" style="background-color: #666699" data-color="666699">&nbsp;</a></li>
+            <li><a href="#" style="background-color: #808080" data-color="808080">&nbsp;</a></li>
+            <li><a href="#" style="background-color: #FF0000" data-color="FF0000">&nbsp;</a></li>
+            <li><a href="#" style="background-color: #FF9900" data-color="FF9900">&nbsp;</a></li>
+            <li><a href="#" style="background-color: #99CC00" data-color="99CC00">&nbsp;</a></li>
+            <li><a href="#" style="background-color: #339966" data-color="339966">&nbsp;</a></li>
+            <li><a href="#" style="background-color: #33CCCC" data-color="33CCCC">&nbsp;</a></li>
+            <li><a href="#" style="background-color: #3366FF" data-color="3366FF">&nbsp;</a></li>
+            <li><a href="#" style="background-color: #800080" data-color="800080">&nbsp;</a></li>
+            <li><a href="#" style="background-color: #999999" data-color="999999">&nbsp;</a></li>
+            <li><a href="#" style="background-color: #FF00FF" data-color="FF00FF">&nbsp;</a></li>
+            <li><a href="#" style="background-color: #FFCC00" data-color="FFCC00">&nbsp;</a></li>
+            <li><a href="#" style="background-color: #FFFF00" data-color="FFFF00">&nbsp;</a></li>
+            <li><a href="#" style="background-color: #00FF00" data-color="00FF00">&nbsp;</a></li>
+            <li><a href="#" style="background-color: #00FFFF" data-color="00FFFF">&nbsp;</a></li>
+            <li><a href="#" style="background-color: #00CCFF" data-color="00CCFF">&nbsp;</a></li>
+            <li><a href="#" style="background-color: #993366" data-color="993366">&nbsp;</a></li>
+            <li><a href="#" style="background-color: #C0C0C0" data-color="C0C0C0">&nbsp;</a></li>
+            <li><a href="#" style="background-color: #FF99CC" data-color="FF99CC">&nbsp;</a></li>
+            <li><a href="#" style="background-color: #FFCC99" data-color="FFCC99">&nbsp;</a></li>
+            <li><a href="#" style="background-color: #FFFF99" data-color="FFFF99">&nbsp;</a></li>
+            <li><a href="#" style="background-color: #CCFFCC" data-color="CCFFCC">&nbsp;</a></li>
+            <li><a href="#" style="background-color: #CCFFFF" data-color="CCFFFF">&nbsp;</a></li>
+            <li><a href="#" style="background-color: #99CCFF" data-color="99CCFF">&nbsp;</a></li>
+            <li><a href="#" style="background-color: #CC99FF" data-color="CC99FF">&nbsp;</a></li>
+            <li><a href="#" style="background-color: #FFFFFF" data-color="FFFFFF">&nbsp;</a></li>
+    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="toolbar-item toolbar-dropdown" id="more-menu">
+                        <div class="aui-dd-parent">
+                            <a href="#" class="toolbar-trigger aui-dd-trigger" id="rte-button-more" title="More">
+                                    <span class="icon icon-more "></span>
+                                    <span class="icon icon-dropdown "></span>
+                            </a>
+                            <div class="aui-dropdown grouped hidden">
+                                <div class="grouped-dropdown-item">
+                                    <ul>
+                                                            <li class="dropdown-item more-menu-trigger" data-control-id="strikethrough">
+        <a id="rte-strikethrough" class="item-link" title="Strikethrough (Ctrl+Shift+S)" href="#">
+                <span class="icon icon-check hidden"></span>
+Strikethrough
+        </a>
+    </li>
+                                                        <li class="dropdown-item more-menu-trigger" data-control-id="sub">
+        <a id="rte-sub" class="item-link" title="Subscript" href="#">
+                <span class="icon icon-check hidden"></span>
+Subscript
+        </a>
+    </li>
+                                                        <li class="dropdown-item more-menu-trigger" data-control-id="sup">
+        <a id="rte-sup" class="item-link" title="Superscript" href="#">
+                <span class="icon icon-check hidden"></span>
+Superscript
+        </a>
+    </li>
+                                                    <li class="dropdown-item more-menu-trigger" data-control-id="monospace">
+        <a id="rte-monospace" class="item-link" title="Format text with monospaced font" href="#">
+                <span class="icon icon-check hidden"></span>
+Monospace
+        </a>
+    </li>
+
+                                                                                                                    </ul>
+                                </div>
+                                <div class="grouped-dropdown-item">
+                                    <ul>
+                                            <li class="dropdown-item more-menu-trigger no-icon" data-format="removeformat">
+        <a id="rte-removeformat" class="item-link" title="Clears formatting on currently selected text" href="#">
+            Clear Formatting
+        </a>
+    </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>
+                </ul>
+
+                <ul class="toolbar-group">
+                    
+                <li class="toolbar-item" id="rte-button-bullist">
+        <a class="toolbar-trigger" href="#" title="Bullet list (Ctrl+Shift+B)" data-control-id="bullist">
+                <span class="icon icon-bullist ">Bullet list</span>
+        </a>
+    </li>
+                    
+                <li class="toolbar-item" id="rte-button-numlist">
+        <a class="toolbar-trigger" href="#" title="Numbered list (Ctrl+Shift+N)" data-control-id="numlist">
+                <span class="icon icon-numlist ">Numbered list</span>
+        </a>
+    </li>
+                                    </ul>
+
+                <ul class="toolbar-group">
+                    
+                <li class="toolbar-item" id="rte-button-outdent">
+        <a class="toolbar-trigger" href="#" title="Outdent" data-control-id="outdent">
+                <span class="icon icon-outdent ">Outdent</span>
+        </a>
+    </li>
+                    
+                <li class="toolbar-item" id="rte-button-indent">
+        <a class="toolbar-trigger" href="#" title="Indent" data-control-id="indent">
+                <span class="icon icon-indent ">Indent</span>
+        </a>
+    </li>
+                </ul>
+
+                <ul class="toolbar-group">
+                    
+                <li class="toolbar-item" id="rte-button-justifyleft">
+        <a class="toolbar-trigger" href="#" title="Align left" data-control-id="justifyleft">
+                <span class="icon icon-justifyleft ">Align left</span>
+        </a>
+    </li>
+                    
+                <li class="toolbar-item" id="rte-button-justifycenter">
+        <a class="toolbar-trigger" href="#" title="Align center" data-control-id="justifycenter">
+                <span class="icon icon-justifycenter ">Align center</span>
+        </a>
+    </li>
+                    
+                <li class="toolbar-item" id="rte-button-justifyright">
+        <a class="toolbar-trigger" href="#" title="Align right" data-control-id="justifyright">
+                <span class="icon icon-justifyright ">Align right</span>
+        </a>
+    </li>
+                </ul>
+
+                <ul class="toolbar-group">
+                    <li class="toolbar-item">
+                        <a class="toolbar-trigger" href="#" id="rte-button-link" data-control-id="linkbrowserButton" title="Insert Link (Ctrl+K)">
+                                <span class="icon icon-link "></span>
+                            <span class="trigger-text">Link</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="toolbar-group">
+                    <li class="toolbar-item toolbar-dropdown" id="insert-table-dropdown">
+                        <div class="aui-dd-parent">
+                            <a href="#" class="toolbar-trigger aui-dd-trigger" id="rte-button-insert-table" title="Insert Table">
+                                    <span class="icon icon-table "></span>
+                                <span class="dropdown-text">Table</span>
+                                    <span class="icon icon-dropdown "></span>
+                            </a>
+
+                            <div id="table-picker-container" class="hidden">
+                                <div class="table-picker-box" title="Hold SHIFT for a table without a heading.">
+                                    <div class="table-picker-background">
+                                        <div class="picker picker-cell"></div>
+                                        <div class="picker picker-heading heading"></div>
+                                        <div class="picker picker-selected-cell"></div>
+                                        <div class="picker picker-selected-heading heading"></div>
+                                    </div>
+                                    <p class="desc"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                
+                <ul class="toolbar-group">
+                    <li class="toolbar-item toolbar-dropdown" id="insert-menu">
+                        <div class="aui-dd-parent">
+                            <a href="#" class="toolbar-trigger aui-dd-trigger" id="rte-button-insert" title="Insert">
+                                    <span class="icon icon-insert "></span>
+                                <span class="dropdown-text">Insert</span>
+                                    <span class="icon icon-dropdown "></span>
+                            </a>
+
+                            <div class="aui-dropdown grouped hidden">
+                                <div class="grouped-dropdown-item">
+                                    <span class="assistive">Insert Content</span>
+                                    <ul id="content-insert-list">
+                                        
+        
+        <li class="dropdown-item content-image" data-command="mceConfimage">
+        <a id="rte-insert-image" class="item-link" title="Insert Image (Ctrl+M)" href="#">
+                <span class="icon "></span>
+ Image
+        </a>
+    </li>
+                                        
+        
+        <li class="dropdown-item content-link" data-control-id="linkbrowserButton">
+        <a id="rte-insert-link" class="item-link" title="Insert Link (Ctrl+K)" href="#">
+                <span class="icon "></span>
+ Link
+        </a>
+    </li>
+                                                                                    
+    
+        <li class="dropdown-item content-attachment" data-command="mceConfAttachments">
+        <a id="rte-insert-attachment" class="item-link" title="Insert Attachment" href="#">
+                <span class="icon "></span>
+ Attachment
+        </a>
+    </li>
+                                                                                
+    
+        <li class="dropdown-item content-symbol" data-command="confCharmap">
+        <a id="rte-insert-symbol" class="item-link" title="Insert Symbol" href="#">
+                <span class="icon "></span>
+ Symbol
+        </a>
+    </li>
+                                        
+    
+        <li class="dropdown-item content-emoticon" data-command="mceEmotion">
+        <a id="rte-insert-emoticon" class="item-link" title="Insert Emoticon" href="#">
+                <span class="icon "></span>
+ Emoticon
+        </a>
+    </li>
+                                        
+        
+        <li class="dropdown-item content-wikimarkup" data-command="InsertWikiMarkup">
+        <a id="rte-insert-wikimarkup" class="item-link" title="Insert Wiki Markup (Ctrl+Shift+D)" href="#">
+                <span class="icon "></span>
+ Wiki Markup
+        </a>
+    </li>
+                                        
+    
+        <li class="dropdown-item content-hr" data-command="InsertHorizontalRule">
+        <a id="rte-insert-hr" class="item-link" title="Insert horizontal rule" href="#">
+                <span class="icon "></span>
+ Horizontal rule
+        </a>
+    </li>
+                                                                            </ul>
+                                </div>
+                                <div class="grouped-dropdown-item">
+                                    <span class="assistive">tinymce.confluence.insert_menu.macro_desc</span>
+                                    <ul id="macro-insert-list">
+                                                                        
+                                                                        
+                                <li class="dropdown-item macro-insertmention-button" data-macro-name="insertmention-button">
+        <a id="insertmention-button" class="item-link" title="Insert 'User Mention' macro" href="#">
+                <span class="icon "></span>
+ User Mention
+        </a>
+    </li>
+                                                                                                <li class="dropdown-item macro-jiralink" data-macro-name="jiralink">
+        <a id="jiralink" class="item-link" title="Insert 'JIRA Issue' macro" href="#">
+                <span class="icon "></span>
+ JIRA Issue
+        </a>
+    </li>
+                                                                                                <li class="dropdown-item macro-gliffy" data-macro-name="gliffy">
+        <a id="gliffy" class="item-link" title="Insert 'Gliffy Diagram' macro" href="#">
+                <span class="icon "></span>
+ Gliffy Diagram
+        </a>
+    </li>
+                                                                                                <li class="dropdown-item macro-info" data-macro-name="info">
+        <a id="info" class="item-link" title="Insert 'Info' macro" href="#">
+                <span class="icon "></span>
+ Info
+        </a>
+    </li>
+                                                                                                <li class="dropdown-item macro-status" data-macro-name="status">
+        <a id="status" class="item-link" title="Insert 'Status' macro" href="#">
+                <span class="icon "></span>
+ Status
+        </a>
+    </li>
+                                                                                                <li class="dropdown-item macro-gallery" data-macro-name="gallery">
+        <a id="gallery" class="item-link" title="Insert 'Gallery' macro" href="#">
+                <span class="icon "></span>
+ Gallery
+        </a>
+    </li>
+                                                                                                <li class="dropdown-item macro-toc" data-macro-name="toc">
+        <a id="toc" class="item-link" title="Insert 'Table of Contents' macro" href="#">
+                <span class="icon "></span>
+ Table of Contents
+        </a>
+    </li>
+                                                                                                                            
+        
+        <li class="dropdown-item content-macro" data-command="mceConfMacroBrowser">
+        <a id="rte-insert-macro" class="item-link" title="Open the macro browser (Ctrl+Shift+A)" href="#">
+                <span class="icon "></span>
+ Other Macros
+        </a>
+    </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                
+                <ul class="toolbar-group">
+                    
+                <li class="toolbar-item" id="rte-button-undo">
+        <a class="toolbar-trigger" href="#" title="Undo (Ctrl+Z)" data-control-id="undo">
+                <span class="icon icon-undo ">Undo</span>
+        </a>
+    </li>
+                    
+                <li class="toolbar-item" id="rte-button-redo">
+        <a class="toolbar-trigger" href="#" title="Redo (Ctrl+Y)" data-control-id="redo">
+                <span class="icon icon-redo ">Redo</span>
+        </a>
+    </li>
+                </ul>
+
+                
+            </div>            <div class="toolbar-split toolbar-split-right">
+                <ul class="toolbar-group">
+                        <li class="toolbar-item" id="rte-button-searchreplace">
+        <a class="toolbar-trigger" href="#" title="Find/Replace" data-control-id="searchreplace">
+                <span class="icon icon-searchreplace ">Find/Replace</span>
+        </a>
+    </li>
+                </ul>
+                <ul class="toolbar-group">
+                        <li class="toolbar-item" id="rte-button-help">
+        <a class="toolbar-trigger" href="#" title="Help" data-control-id="help">
+                <span class="icon icon-help ">Keyboard Shortcuts Help</span>
+        </a>
+    </li>
+                </ul>
+            </div>        </div>    </div>
+    <div id="wysiwyg" class="resize">
+        <div id="rte" class="cell editor-default">
+            <textarea id="wysiwygTextarea" name="wysiwygContent" class="hidden tinymce-editor"></textarea>
+        </div>
+    </div>
+    <div id="editor-html-source-container" class="hidden">
+        <textarea id="editor-html-source" class="monospaceInput"></textarea>
+    </div>
+
+    <div id="preview">
+                        <div id="previewArea" class="cell">
+        </div>
+    </div>
+
+    
+
+<div id="savebar-container">
+    <div id="rte-savebar" class="aui-toolbar">
+
+                    
+        
+        <div class="toolbar-split toolbar-split-row">
+            <div class="toolbar-split toolbar-split-left">
+            <ul class="toolbar-group">
+                                            </ul>
+                    </div>
+            <div class="toolbar-split toolbar-split-right">
+            <div class="toolbar-group" id="toolbar-group-minor-edit">
+                <ul class="toolbar-group toolbar-group-watch-page" id="toolbar-group-watch-page-after-comment">
+                    <li class="toolbar-item">
+                        <label for="watchPage">Watch this page</label>
+                        <input id="watchPage" name="watchPageAfterComment" value="true" checked="checked" type="checkbox">
+                    </li>
+                </ul>
+                                            </div>
+
+        
+            <ul class="toolbar-group toolbar-group-edit assistive">
+                <li class="toolbar-item">
+                    <a id="rte-button-edit" class="toolbar-trigger" title="Return To Edit Mode" href="#">&lt; Edit</a>
+                </li>
+            </ul>
+            <ul class="toolbar-group toolbar-group-preview">
+                <li class="toolbar-item">
+                    <a id="rte-button-preview" title="Preview" class="toolbar-trigger" href="#">Preview &gt;</a>
+                    <span id="wysiwygWaitImage" class="icon loading hidden">Loading…</span>
+                </li>
+            </ul>
+
+        
+            <ul class="toolbar-group">
+                                                                        
+                                                                        
+            <li class="toolbar-item">
+                            <button class="toolbar-trigger" type="submit" href="#" id="rte-button-publish" title="Save your page" name="confirm" value="Save">
+                                <span class="trigger-text">Save</span>
+                            </button>
+                        </li>
+                                                </ul>
+                                            <ul class="toolbar-group">
+                <li class="toolbar-item toolbar-item-link">
+                    
+                    <button class="toolbar-trigger" type="submit" id="rte-button-cancel" value="discard" name="cancel">Cancel</button>
+                </li>
+            </ul>
+
+        </div>         </div>
+             </div> </div>
+
+ 
+            <div id="link-browser-tab-items" class="hidden">
+                <div title="Search" data-weight="10">search</div>
+            <div title="Recently Viewed" data-weight="20">recentlyviewed</div>
+            <div title="Attachments" data-weight="30">attachments</div>
+            <div title="Web Link" data-weight="40">weblink</div>
+            <div title="Advanced" data-weight="50">advanced</div>
+    </div>
+    
+</div>
+
+
+
+<script type="text/x-template" title="dynamic-editor-metadata">
+            <meta name="ajs-content-type" content="comment">
+            <meta name="ajs-min-editor-height" content="150">
+            <meta name="ajs-editor-plugin-resource-prefix" content="/s/en_GB/3397/d976175803f1ca76369950eacde52f8cbf5a54d9.5/4.3.6/_">
+            <meta name="ajs-num-attachments" content="">
+            <meta name="ajs-auto-start" content="false">
+            <meta name="ajs-cancel-button-close-text" content="Close">
+            <meta name="ajs-content-id" content="141131778">
+            <meta name="ajs-action-locale" content="en_GB">
+            <meta name="ajs-save-drafts" content="false">
+            <meta name="ajs-use-inline-tasks" content="">
+            <meta name="ajs-heartbeat" content="true">
+            <meta name="ajs-cancel-button-discard-text" content="">
+            <meta name="ajs-draft-id" content="">
+            <meta name="ajs-new-page" content="">
+            <meta name="ajs-form-name" content="inlinecommentform">
+            <meta name="ajs-attachment-source-content-id" content="141131778">
+            <meta name="ajs-editor-mode" content="richtext">
+            <meta name="ajs-draft-type" content="">
+            <meta name="ajs-existing-draft-id" content="">
+            <meta name="ajs-can-attach-files" content="true">
+                
+            		    <meta name="ajs-max-thumb-width" content="300">
+		    <meta name="ajs-can-send-email" content="true">
+		    <meta name="ajs-is-dev-mode" content="false">
+		    <meta name="ajs-draft-save-interval" content="630000">
+		    <meta name="ajs-show-hidden-user-macros" content="true">
+		    <meta name="ajs-is-admin" content="true">
+		    <meta name="ajs-confluence.prefs.editor.disable.autocomplete" content="false">
+		    <meta name="ajs-confluence.prefs.editor.disable.autoformat" content="false">
+		    <meta name="ajs-heartbeat-interval" content="30000">
+	
+    </script>
+
+
+<script type="text/x-template" title="tableForm">
+    <form id="tinymce-table-form" class="aui">
+        <div class="field-group">
+            <label for="rows">Rows</label>
+            <input id="rows" name="rows" type="text" size="3" autocomplete="off" value="{0}">
+        </div>
+        <div class="field-group">
+            <label for="cols">Columns</label>
+            <input id="cols" name="cols" type="text" size="3" autocomplete="off" value="{1}">
+        </div>
+        <div class="field-group hidden">
+            <input id="width" type="hidden" name="width" value="">
+            <label for="width">Width</label>
+        </div>
+        <div class="group">
+            <div class="checkbox">
+                <input id="table-heading-checkbox" class="checkbox" type="checkbox" name="heading" checked="checked" value="true">
+                <label for="table-heading-checkbox">First row is heading</label>
+            </div>
+        </div>
+        <div class="group hidden">
+            <div class="checkbox">
+                <input id="table-equal-width-columns-checkbox" class="checkbox" type="checkbox" name="equal-width-columns" value="false">
+                <label for="table-equal-width-columns-checkbox">Equal width columns</label>
+            </div>
+        </div>
+    </form>
+</script><script type="text/x-template" title="labels-dialog-div">
+        <div id="labels-dialog">
+        <div class="labels-editor">
+            <form method="GET" action="" id="add-labels-form">
+                <div id="labelOperationErrorContainer">
+                    <span class="error"><span class="errorMessage" id="labelOperationErrorMessage"></span></span>
+                </div>
+    
+                <div id="label-input-fields">
+                    <input autocomplete="off" id="labelsString" name="labelsString" value="">
+                    <input id="add-labels-editor-button" type="submit" class="add-labels" value="Add">
+                </div>
+                <div id="labelsAutocompleteList" class="aui-dd-parent resize-to-input" style="width: 417px"></div>
+                <div id="dialog-label-list">
+                    <!-- DIV placeholder for labels list, is copied into in labels-dialog.js -->
+                </div>
+                <div id="waitImageAndStatus">
+                    <img class="waiting" alt="Please wait" src="/confluence/s/en_GB/3397/d976175803f1ca76369950eacde52f8cbf5a54d9.5/_/images/icons/wait.gif">&nbsp;
+                    <span id="labelOperationStatus" class="smalltext"></span>
+                </div>
+                <div class="labels-tip"></div>
+            </form>
+        </div>
+        <div style="display: none;">
+            <div class="labels-section-content content-column"
+    		>
+	<div class="labels-content">
+		
+
+    </div>
+</div>        </div>
+    </div>
+</script>
+    <input name="atl_token" value="58943643f5e18d5c6b91130be3cc09c1e28e2153" type="hidden">
+</div><div style="margin-top: -205px; margin-left: -230px; width: 460px; height: 410px; background: none repeat scroll 0% 0% rgb(255, 255, 255); z-index: 3002; display: none;" id="image-effects-dialog" class="aui-popup aui-dialog"><div class="dialog-components"><h2 class="dialog-title">Add Image Effect</h2><ul style="height: 314px; display: none;" class="dialog-page-menu"><li class="page-menu-item selected"><button class="item-button">imgs</button></li></ul><div class="dialog-page-body"><div style="height: 304px;" class="dialog-panel-body"><div class="image-effects"><ul class="image-list"><li class="attached-image image-effect-preview image-effect-none"><div class="image-container"><img class="thumbnail" src="GoAgent%20Linux_files/imgFilter_003.png" title="None" style="margin-top: 5px" height="90" width="100"></div><span class="caption filename" title="None">None</span></li><li class="attached-image image-effect-preview"><div class="image-container"><img class="thumbnail" src="GoAgent%20Linux_files/imgFilter_004.png" title="Taped" style="margin-top: 5px" height="90" width="100"></div><span class="caption filename" title="Taped">Taped</span></li><li class="attached-image image-effect-preview"><div class="image-container"><img class="thumbnail" src="GoAgent%20Linux_files/imgFilter_005.png" title="Instant Camera" style="margin-top: 5px" height="90" width="100"></div><span class="caption filename" title="Instant Camera">Instant Camera</span></li><li class="attached-image image-effect-preview"><div class="image-container"><img class="thumbnail" src="GoAgent%20Linux_files/imgFilter_002.png" title="Curl Shadow" style="margin-top: 5px" height="90" width="100"></div><span class="caption filename" title="Curl Shadow">Curl Shadow</span></li><li class="attached-image image-effect-preview"><div class="image-container"><img class="thumbnail" src="GoAgent%20Linux_files/imgFilter_006.png" title="Snapshot" style="margin-top: 5px" height="90" width="100"></div><span class="caption filename" title="Snapshot">Snapshot</span></li><li class="attached-image image-effect-preview"><div class="image-container"><img class="thumbnail" src="GoAgent%20Linux_files/imgFilter.png" title="Drop Shadow" style="margin-top: 5px" height="90" width="100"></div><span class="caption filename" title="Drop Shadow">Drop Shadow</span></li></ul></div></div></div><div class="dialog-button-panel"><a class="button-panel-link button-panel-cancel-link" href="#">Close</a></div></div></div></body></html>

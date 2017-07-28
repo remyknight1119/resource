@@ -1,0 +1,28 @@
+#!/bin/sh
+
+nic=$1
+
+if [ -f ./qemu-kvm ]; then
+    . ./qemu-kvm
+fi
+
+if [ -z $has_br ]; then
+    brctl addbr $switch 
+fi
+
+ifconfig $nic 0.0.0.0 up 
+brctl addif ${switch} $nic
+brctl stp ${switch} on
+if [ x$host_ip != x ]; then 
+	ifconfig ${switch} ${subnet}2/${netmask} up
+fi
+
+if [ -z $ph_nic ]; then
+	exit
+fi
+sysctl -w net.ipv4.ip_forward=1
+sysctl -w net.ipv6.conf.all.forwarding=1
+
+if [ x$host_ip != x ]; then 
+	iptables -t nat -A POSTROUTING -o $ph_nic -s ${subnet}0/${netmask} -j SNAT --to $host_ip
+fi

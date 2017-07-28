@@ -1,0 +1,25 @@
+#!/bin/sh
+
+# NOTE: This script is intended to run in conjunction with qemu-ifup
+#       which uses the same logic to find your bridge/switch
+
+nic=$1
+
+if [ -f ./qemu-kvm ]; then
+    . ./qemu-kvm
+fi
+
+brctl delif $switch $nic
+if [ -z $has_br ]; then
+    brctl delbr $switch 
+fi
+
+ifconfig $nic 0.0.0.0 down
+
+if [ -z $ph_nic ]; then
+	exit
+fi
+
+if [ x$host_ip != x ]; then 
+	iptables -t nat -D POSTROUTING -o $ph_nic -s ${subnet}0/${netmask} -j SNAT --to $host_ip
+fi
