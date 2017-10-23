@@ -1,0 +1,44 @@
+Root CA Created
+
+
+
+
+mkdir root
+cd root
+mkdir certs crl newcerts private csr
+chmod 700 private
+touch index.txt
+echo 1000 > serial
+openssl genrsa -out private/rootCA.key 2048
+openssl req -config Root-CA.cnf \
+      -key private/rootCA.key \
+      -new -x509 -days 3650 -sha256 -extensions v3_ca \
+      -out certs/rootCA.crt
+chmod 444 certs/rootCA.crt
+
+RootCA Server RSA Key / Cert
+openssl genrsa -out private/rootCA-Serve-RSA.key 2048
+chmod 400 private/rootCA-Serve-RSA.key
+
+openssl req -config Root-CA.cnf \
+      -key private/rootCA-Serve-RSA.key \
+      -new -sha256 -out csr/rootCA-Serve-RSA.csr
+
+openssl ca -config Root-CA.cnf \
+      -extensions server_cert -days 1095 -notext -md sha256 \
+      -in csr/rootCA-Serve-RSA.csr \
+      -out certs/rootCA-Serve-RSA.crt
+
+
+RootCA Server ECC Key / Cert
+openssl ecparam -genkey -name prime256v1 -out private/rootCA-Serve-ECC.key
+chmod 400 private/rootCA-Serve-ECC.key
+
+openssl req -config Root-CA.cnf \
+      -key private/rootCA-Serve-ECC.key \
+      -new -sha256 -out csr/rootCA-Serve-ECC.csr
+
+openssl ca -config Root-CA.cnf \
+      -extensions server_cert -days 1095 -notext -md sha256 \
+      -in csr/rootCA-Serve-ECC.csr \
+      -out certs/rootCA-Serve-ECC.crt
