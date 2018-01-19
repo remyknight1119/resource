@@ -23,3 +23,6 @@ git update-index --no-assume-unchanged your_file_path
 
 8) Create local branch from remote branch
 git checkout -b branch_name remotes/origin/branch_name
+
+9) Clean all the untracked files
+git clean -xdf
