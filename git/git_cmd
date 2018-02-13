@@ -26,3 +26,9 @@ git checkout -b branch_name remotes/origin/branch_name
 
 9) Clean all the untracked files
 git clean -xdf
+
+10) Export a commit as a patch
+git format-patch -1
+
+11) Apply the patch
+git am /path/to/patch
