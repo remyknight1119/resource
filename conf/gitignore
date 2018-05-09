@@ -1,39 +1,88 @@
-*.so
-*.lo
-*.la
-.*.rej
-*.rej
-*.aem3
-*.oem3
-*.sem3
-*.out
+### These files should get ignored no matter where they appear.
+
+# Editors leave these lying around
+\#*\#
+.#*
+*~
+*.swp
+
 cscope.*
 tags
-*.bat
-dvr_rdk_configuro
-*.P
-MAKEFILE.DEPEND
-*.xe674
-*.ko
-*.cmd
-Module.symvers
-modules.order
-*.mod.c
-*.bak
-.tmp_versions/
-*.depend
-*.bin
-*.map
-*.a
+
+# C stuff
 *.o
-ti_tools/
-dvr_rdk/bin/ti816x/scripts/eth_offload_load.sh
-dvr_rdk/bin/ti816x/scripts/eth_offload_unload.sh
-dvr_rdk/bin/ti816x/scripts/eth_org_load.sh
-dvr_rdk/bin/ti816x/env_1024M_256M.sh
-dvr_rdk/bin/ti816x/firmware/
-dvr_rdk/build/
-target/rfs_816x/
-tftphome/uImage_DM816X_TI_EVM
-tftphome/uboot_NAND_DM816X_TI_EVM
-.svn/
+
+# Assembly stuff
+*.S
+*.s
+
+# Windows stuff
+*.obj
+*.exe
+*.lib
+
+# Patch leaves these lying arround
+*.orig
+*.rej
+
+# gcov stuff
+*.gcno
+*.gcov
+*.gcda
+
+# Autotools stuff
+.deps
+.dirstamp
+Makefile
+Makefile.in
+
+# Libtool stuff
+.libs
+*.lo
+*.la
+
+*.def
+*.sym
+*.pc
+
+# man pages
+*.1
+*.3
+
+# tests
+test-driver
+*.log
+*.trs
+# ctags stuff
+TAGS
+
+autom4te.cache
+
+# Libtool adds these, at least sometimes
+INSTALL
+/COPYING
+!m4/check*.m4
+m4/l*
+
+aclocal.m4
+compile
+doxygen
+config.guess
+config.log
+config.status
+config.sub
+configure
+depcomp
+config.h
+config.h.in
+install-sh
+libtool
+ltmain.sh
+missing
+stamp-h1
+stamp-h2
+
+*.tar.gz
+man/Makefile.am
+man/mandoc.db
+src/lbproxy
