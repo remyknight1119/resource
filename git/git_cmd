@@ -32,3 +32,8 @@ git format-patch -1
 
 11) Apply the patch
 git am /path/to/patch
+
+12) Add change to previous commit
+git add -u changed_file
+git commit --amend
+git review xxx
