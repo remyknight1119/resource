@@ -18,19 +18,37 @@ comm_log_get_time_smec(void)
 	return (t.tv_sec*1000 + t.tv_usec/1000);
 }
 
+static inline char *
+comm_log_get_time_str(void)
+{
+    static char t[1024];
+    char *ct  = NULL;
+    time_t timep;
+
+    time(&timep);
+
+	ct = ctime(&timep);
+    snprintf(&t[0], strlen(ct), ct);
+
+    return &t[0];
+}
+
+
 #define COMM_LOG_FILE 	"/home/h.log"
 #define COMM_LOG(format, ...) \
     do { \
         FILE *fp = NULL; \
+        char *curr_time = NULL; \
 		unsigned int 	ms = 0; \
         fp = fopen(COMM_LOG_FILE, "a"); \
         if (fp == NULL) { \
             fprintf(stderr, "open %s failed(%s)\n", COMM_LOG_FILE, strerror(errno)); \
             break; \
         } \
+        curr_time =  comm_log_get_time_str(); \
 		ms = comm_log_get_time_smec(); \
-        fprintf(fp, "<%d>[%u][%s, %d]: "format, getpid(), ms, __FUNCTION__, \
-                __LINE__, ##__VA_ARGS__); \
+        fprintf(fp, "\n<%d>[%s][%u][%s, %d]: "format, getpid(), curr_time, \
+                ms, __FUNCTION__, __LINE__, ##__VA_ARGS__); \
         fclose(fp); \
     } while (0)
 
