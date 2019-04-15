@@ -7,6 +7,7 @@
 #include <sys/time.h>
 #include <sys/types.h>
 #include <unistd.h>
+#include <time.h>
 
 static inline unsigned int
 comm_log_get_time_smec(void)
@@ -67,7 +68,7 @@ comm_log_get_time_str(void)
 		} \
 		fprintf(fp, "<%d>\n", getpid()); \
 		fclose(fp); \
-		COMM_LOG("\nlen = %d\n", len); \
+		COMM_LOG("\nlen = %d\n", (int)len); \
     } while (0)
 
 
