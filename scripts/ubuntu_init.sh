@@ -52,7 +52,7 @@ pkgs=(vim git apache2 vsftpd subversion exuberant-ctags ksnapshot
 wireshark chkconfig virtualbox cpanminus git-svn openssh-server
 gitk minicom nfs-kernel-server cscope adobe-flashplugin skype
 dos2unix apt-file rdesktop iptux autoconf libtool clang libncurses5-dev
-unrar lrzsz pinta fcitx-table-wbpy wput qrfcview terminator)
+unrar lrzsz pinta fcitx-table-wbpy wput qrfcview terminator remmina)
 
 if [ ! -f /sbin/insserv ]; then 
 	sudo ln -s /usr/lib/insserv/insserv /sbin/insserv
