@@ -1,4 +1,5 @@
 openssl genrsa -out private_rsa.pem 2048
+openssl genrsa -aes128 -passout pass:123456 -out $key_file $key_bits
 openssl req -new -x509 -key private_rsa.pem -out cacert.pem -days 1095
 openssl rsa -in private_rsa.pem -pubout -out public_rsa.pem
 openssl rsautl -encrypt -in a.txt -inkey private_rsa.pem -out a.enc 
