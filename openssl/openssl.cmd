@@ -9,10 +9,12 @@ openssl rsautl -sign -inkey private_rsa.pem -in a.txt  -out  sig.dat
 openssl rsautl -verify -inkey private_rsa.pem -in  sig.dat
 openssl rsautl -verify -pubin -inkey public_rsa.pem -in sig.dat
 openssl rsa -inform PEM -in test/pub_key.pem -pubin -text
+#show X509 cert
 openssl x509 -noout -text -in test/pem/cacert.pem
 openssl dsa -in client.key -text -out private.txt
 #pfx to pem
 openssl pkcs12 -in rsa-single.pfx -nodes -out test.pem
+#show CSR
 openssl req -in my.csr -noout -text
 
 2 创建CA根级证书
