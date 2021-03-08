@@ -4,21 +4,23 @@
 int is_valid_ipv4(const char *ipv4)
 {
 	struct in_addr addr;
-	if(ipv4 == NULL)
+
+	if (ipv4 == NULL) {
 		return 0;
-	if(inet_pton(AF_INET, ipv4, (void *)&addr) == 1)
-		return 1;
-	return 0;
+	}
+
+	return (inet_pton(AF_INET, ipv4, (void *)&addr) == 1);
 }
 
 int is_valid_ipv6(const char *ipv6)
 {
 	struct in6_addr addr6;
-	if(ipv6 == NULL)
+
+	if (ipv6 == NULL) {
 		return 0;
-	if(inet_pton(AF_INET6, ipv6, (void *)&addr6) == 1)
-		return 1;
-	return 0;
+	}
+
+	return (inet_pton(AF_INET6, ipv6, (void *)&addr6) == 1);
 }
 
 int main(void)
