@@ -15,7 +15,7 @@ openssl dsa -in client.key -text -out private.txt
 #pfx to pem
 openssl pkcs12 -in rsa-single.pfx -nodes -out test.pem
 #show CSR
-openssl req -in my.csr -noout -text
+openssl req -noout -text -in my.csr
 
 2 创建CA根级证书
 生成key：openssl genrsa -out /etc/pki/ca_linvo/root/ca.key
