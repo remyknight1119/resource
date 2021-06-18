@@ -37,3 +37,9 @@ git am /path/to/patch
 git add -u changed_file
 git commit --amend
 git review xxx
+
+13) Review log
+git log -p
+
+14) Search all the log that the commit contian "content"
+git log -S "content" 
