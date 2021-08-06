@@ -16,6 +16,8 @@ openssl dsa -in client.key -text -out private.txt
 openssl pkcs12 -in rsa-single.pfx -nodes -out test.pem
 #show CSR
 openssl req -noout -text -in my.csr
+#verify CA and cert
+openssl verify -verbose -CAfile ca-root.cer rsa-single.cer
 
 2 创建CA根级证书
 生成key：openssl genrsa -out /etc/pki/ca_linvo/root/ca.key
