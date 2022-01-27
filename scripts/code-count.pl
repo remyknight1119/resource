@@ -2,23 +2,9 @@
 #
 use Getopt::Std;
 
-use vars qw($opt_d $opt_a, $opt_h);
-getopts('d:a:h');
-
 sub usage 
 {
-	print ("usage: $0 -d [dir name] -a []\n");
-}
-
-if ($opt_h) {
-	&usage;
-	exit(1);
-}
-
-if (! $opt_d) {
-	print "-d not set!\n";
-	&usage;
-	exit(1);
+	print ("usage: $0 [dir-1] [dir-2] [dir-3]..[dir-n]\n");
 }
 
 sub count_file
@@ -54,7 +40,6 @@ sub count_dir
     opendir DIR, $dir or die "Can not open $dir/n";
     my @filelist = readdir DIR;
 
-    print "dir: ".$dir,"\n";
     foreach (@filelist) {
         my $path = "$dir/$_";
         if (-d $path) {
@@ -69,6 +54,15 @@ sub count_dir
     return $count;
 }
 
-$count = count_dir($opt_d);
+$count = 0;
+
+foreach(@ARGV){
+    if ($_ eq "-h") {
+        usage();
+        exit(0);
+    }
+    $count += count_dir($_);
+}
+
 print "Code Count is $count\n";
 
