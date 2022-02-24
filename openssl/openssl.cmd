@@ -12,6 +12,8 @@ openssl rsa -inform PEM -in test/pub_key.pem -pubin -text
 #show X509 cert
 openssl x509 -noout -text -in test/pem/cacert.pem
 openssl dsa -in client.key -text -out private.txt
+#show ECDSA key
+openssl ec -in ecdsa.key -text
 #pfx to pem
 openssl pkcs12 -in rsa-single.pfx -nodes -out test.pem
 #show CSR
