@@ -31,3 +31,4 @@ openssl verify -verbose -CAfile ca-root.cer rsa-single.cer
 openssl x509 -inform pem -in Certificate.pem -outform der -out Certificate.der
 #To convert a PEM private key to a DER private key
 openssl rsa -inform pem -in PrivateKey.pem -outform der -out PrivateKey.der
+openssl ec -inform pem -in ecdsa-single.pem -outform der -out ecdsa-single.der
