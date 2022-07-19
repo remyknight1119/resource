@@ -26,3 +26,8 @@ openssl verify -verbose -CAfile ca-root.cer rsa-single.cer
 生成csr：openssl req -new -key /etc/pki/ca_linvo/root/ca.key -out /etc/pki/ca_linvo/root/ca.csr
 生成crt：openssl x509 -req -days 3650 -in /etc/pki/ca_linvo/root/ca.csr -signkey /etc/pki/ca_linvo/root/ca.key -out /etc/pki/ca_linvo/root/ca.crt
 生成crl：openssl ca -gencrl -out /etc/pki/ca_linvo/root/ca.crl -crldays 7
+
+#To convert a PEM certificate to a DER certificate
+openssl x509 -inform pem -in Certificate.pem -outform der -out Certificate.der
+#To convert a PEM private key to a DER private key
+openssl rsa -inform pem -in PrivateKey.pem -outform der -out PrivateKey.der
