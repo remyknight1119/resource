@@ -46,33 +46,23 @@ deploy_confs()
 }
 
 set -e
-sudo add-apt-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
-sudo apt-get update
-pkgs=(vim git apache2 vsftpd subversion exuberant-ctags ksnapshot
-wireshark chkconfig virtualbox cpanminus git-svn openssh-server
-gitk minicom nfs-kernel-server cscope adobe-flashplugin skype
-dos2unix apt-file rdesktop iptux autoconf libtool clang libncurses5-dev
-unrar lrzsz pinta fcitx-table-wbpy wput qrfcview terminator remmina)
 
-if [ ! -f /sbin/insserv ]; then 
-	sudo ln -s /usr/lib/insserv/insserv /sbin/insserv
-fi
+#sudo add-apt-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
+#sudo apt-get update
+pkgs=(vim git apache2 vsftpd subversion exuberant-ctags
+wireshark virtualbox cpanminus git-svn openssh-server
+gitk cscope adobe-flashplugin skype
+dos2unix apt-file rdesktop autoconf libtool clang
+unrar lrzsz pinta wput qrfcview terminator remmina)
+
+#if [ ! -f /sbin/insserv ]; then 
+#	sudo ln -s /usr/lib/insserv/insserv /sbin/insserv
+#fi
 
 for pkg in ${pkgs[@]}
 do
     sudo apt-get install -y $pkg
 done
 
-cpanpkgs=(SourceCode::LineCounter::Perl Proc::Daemon)
-
-for cpkg in ${cpanpkgs[@]}
-do
-    sudo cpanm $cpkg
-done
-
-resource_dir=~/resourcebackup-code
-if [ ! -d $resource_dir ]; then
-	git clone git://git.code.sf.net/p/resourcebackup/code $resource_dir
-fi
 deploy_scripts $resource_dir/scripts
 deploy_confs $resource_dir/conf
