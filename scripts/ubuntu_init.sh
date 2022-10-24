@@ -30,8 +30,8 @@ deploy_confs()
     sudo cp -f vimrc /root/.vimrc
     cp -f gitconfig ~/.gitconfig
 
-    change_conf "name" ~/.gitconfig
-    change_conf "email" ~/.gitconfig
+    change_conf "git config name" ~/.gitconfig
+    change_conf "git config email" ~/.gitconfig
 
     vimdir=/usr/share/vim
     vimdirs=`ls $vimdir`
@@ -51,9 +51,8 @@ set -e
 #sudo apt-get update
 pkgs=(vim git apache2 vsftpd subversion exuberant-ctags
 wireshark virtualbox cpanminus git-svn openssh-server
-gitk cscope adobe-flashplugin skype
-dos2unix apt-file rdesktop autoconf libtool clang
-unrar lrzsz pinta wput qrfcview terminator remmina)
+gitk cscope dos2unix apt-file rdesktop autoconf libtool clang
+unrar lrzsz pinta wput terminator remmina)
 
 #if [ ! -f /sbin/insserv ]; then 
 #	sudo ln -s /usr/lib/insserv/insserv /sbin/insserv
@@ -64,5 +63,6 @@ do
     sudo apt-get install -y $pkg
 done
 
+resource_dir=$PWD/..
 deploy_scripts $resource_dir/scripts
 deploy_confs $resource_dir/conf
