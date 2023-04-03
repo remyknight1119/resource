@@ -50,7 +50,7 @@ set -e
 #sudo add-apt-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
 #sudo apt-get update
 pkgs=(vim git apache2 vsftpd subversion exuberant-ctags
-wireshark virtualbox cpanminus git-svn openssh-server
+wireshark cpanminus git-svn openssh-server
 gitk cscope dos2unix apt-file rdesktop autoconf libtool clang
 unrar lrzsz pinta wput terminator remmina)
 
