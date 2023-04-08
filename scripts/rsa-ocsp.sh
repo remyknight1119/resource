@@ -1,6 +1,6 @@
 #!/bin/bash
 
-subj=/C="CN"/ST="Beijing"/L="RSA1"/O="Fortinet"/OU="rsa"/CN="domain1.net"
+subj=/C="US"/ST="CA"/L="RSA1"/O="Fortinet"/OU="rsa"/CN="domain1.net"
 target_cert=rsa-ocsp.cer
 target_key=rsa-ocsp.key
 target_req=rsa-ocsp.req

@@ -6,10 +6,10 @@ dir=`dirname $0`
 set -e
 key_bits=2048
 expire_days=3650
-subj=/C="CN"/ST="Liaoning"/L="Shenyang"/O="Dove"/OU="dove"/CN="doveR"
-subji=/C="CN"/ST="Liaoning"/L="Shenyang"/O="Dove"/OU="dove"/CN="doveI"
-subjs=/C="CN"/ST="Liaoning"/L="Shenyang"/O="Dove"/OU="dove"/CN="doveS"
-subj2=/C="CN"/ST="Liaoning"/L="Shenyang"/O="DoveCERT"/OU="dove"/CN="dove"
+subj=/C="US"/ST="CA"/L="Sunnyvale"/O="Dove"/OU="dove"/CN="doveR"
+subji=/C="US"/ST="CA"/L="Sunnyvale"/O="Dove"/OU="dove"/CN="doveI"
+subjs=/C="US"/ST="CA"/L="Sunnyvale"/O="Dove"/OU="dove"/CN="doveS"
+subj2=/C="US"/ST="CA"/L="Sunnyvale"/O="DoveCERT"/OU="dove"/CN="dove"
 server="server-chain"
 param=$server
 if [ -d $param ]; then
@@ -67,5 +67,5 @@ rm -f *.csr *.srl
 #cat $sub1_cacer $cacer $cer $key |tee $param.pem
 cat $cer $key $cacer $sub1_cacer |tee $param.pem
 echo "===================Gen All OK===================="
-# openssl verify -CAfile ca.cer client.cer
+#openssl verify -CAfile $root_cacer -verify_depth 4 $param.pem
 

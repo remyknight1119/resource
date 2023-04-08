@@ -6,8 +6,7 @@ dir=`dirname $0`
 set -e
 key_bits=2048
 expire_days=3650
-subj=/C="CN"/ST="Beijing"/L="Haidian"/O="Fortinet"/OU="Forti"/CN="testroot"
-server="ecdsa-server-chain"
+subj=/C="US"/ST="CA"/L="Sunnyvale"/O="Fortinet"/OU="Forti"/CN="testroot"
 ca_name=ca-root
 root_cacer=$ca_name.cer
 root_cakey=$ca_name.key

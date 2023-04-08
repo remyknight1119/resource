@@ -6,8 +6,8 @@
 set -e
 key_bits=2048
 expire_days=3650
-subj=/C="CN"/ST="Liaoning"/L="Shenyang"/O="Dove"/OU="dove"/CN="dove"
-subj2=/C="CN"/ST="Liaoning"/L="Shenyang"/O="DoveCERT"/OU="dove"/CN="dove"
+subj=/C="US"/ST="Liaoning"/L="Shenyang"/O="Dove"/OU="dove"/CN="dove"
+subj2=/C="US"/ST="Liaoning"/L="Shenyang"/O="DoveCERT"/OU="dove"/CN="dove"
 usage()
 {
     echo "$0 ecdsa-client|ecdsa-server|package"

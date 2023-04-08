@@ -6,9 +6,9 @@ dir=`dirname $0`
 set -e
 key_bits=2048
 expire_days=3650
-subj=/C="CN"/ST="Liaoning"/L="Shenyang"/O="Dove"/OU="dove"/CN="dove"
-subjs=/C="CN"/ST="Liaoning"/L="Shenyang"/O="Dove"/OU="dove"/CN="doveS"
-subj2=/C="CN"/ST="Liaoning"/L="Shenyang"/O="DoveCERT"/OU="dove"/CN="dove"
+subj=/C="US"/ST="Liaoning"/L="Shenyang"/O="Dove"/OU="dove"/CN="dove"
+subjs=/C="US"/ST="Liaoning"/L="Shenyang"/O="Dove"/OU="dove"/CN="doveS"
+subj2=/C="US"/ST="Liaoning"/L="Shenyang"/O="DoveCERT"/OU="dove"/CN="dove"
 server="ecdsa-server-chain"
 param=$server
 if [ -d $param ]; then

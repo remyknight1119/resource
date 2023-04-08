@@ -1,6 +1,6 @@
 #!/bin/bash
 
-subj=/C="CN"/ST="Beijing"/L="ECDSA2"/O="Fortinet"/OU="ecdsa"/CN="domain1.net"
+subj=/C="US"/ST="CA"/L="ECDSA2"/O="Fortinet"/OU="ecdsa"/CN="domain1.net"
 target_cert=ecdsa-ocsp.cer
 target_key=ecdsa-ocsp.key
 target_req=ecdsa-ocsp.req

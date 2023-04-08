@@ -6,7 +6,8 @@ dir=`dirname $0`
 set -e
 key_bits=2048
 expire_days=3650
-subj=/C="CN"/ST="Beijing"/L="Haidian"/O="Fortinet"/OU="Forti"/CN="testroot"
+subj=/C="US"/ST="CA"/L="Sunnyvale"/O="Fortinet"/OU="Forti"/CN="testroot"
+config=./openssl.cnf
 rm -rf $dir/demoCA 
 mkdir -p $dir/demoCA/{private,newcerts}
 touch $dir/demoCA/index.txt
@@ -19,5 +20,5 @@ root_csr=$ca_name.csr
 #Root CA
 openssl genrsa -out $root_cakey $key_bits
 openssl req -new -key $root_cakey -out $root_csr -subj $subj -days $expire_days
-openssl ca -keyfile $root_cakey -out $root_cacer -infiles $root_csr -selfsign
+openssl ca -config $config -keyfile $root_cakey -out $root_cacer -infiles $root_csr -selfsign
 echo "===================Gen Root CA OK===================="

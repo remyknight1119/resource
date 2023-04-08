@@ -6,9 +6,9 @@ dir=`dirname $0`
 set -e
 key_bits=2048
 expire_days=3650
-subj1=/C="CN"/ST="Beijing"/L="RSA1"/O="Fortinet"/OU="ecdsa"/CN="ecdsa-intermediate1"
-subj2=/C="CN"/ST="Beijing"/L="RSA1"/O="Fortinet"/OU="ecdsa"/CN="ecdsa-intermediate2"
-subj=/C="CN"/ST="Beijing"/L="RSA1"/O="Fortinet"/OU="ecdsa"/CN="domain6.net"
+subj1=/C="US"/ST="CA"/L="RSA1"/O="Fortinet"/OU="ecdsa"/CN="ecdsa-intermediate1"
+subj2=/C="US"/ST="CA"/L="RSA1"/O="Fortinet"/OU="ecdsa"/CN="ecdsa-intermediate2"
+subj=/C="US"/ST="CA"/L="RSA1"/O="Fortinet"/OU="ecdsa"/CN="domain6.net"
 ca_name=ca-root
 root_cacer=$ca_name.cer
 root_cakey=$ca_name.key
