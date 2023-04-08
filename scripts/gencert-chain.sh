@@ -29,6 +29,7 @@ cakey=$ca_name.key
 cer=$param.cer
 csr=$param.csr
 key=$param.key
+verify=$param-verify.pem
 
 mkdir -p $dir/demoCA/{private,newcerts}
 touch $dir/demoCA/index.txt
@@ -66,6 +67,9 @@ rm -f *.csr *.srl
 
 #cat $sub1_cacer $cacer $cer $key |tee $param.pem
 cat $cer $key $cacer $sub1_cacer |tee $param.pem
+cat $root_cacer $cacer $sub1_cacer |tee $verify
 echo "===================Gen All OK===================="
 #openssl verify -CAfile $root_cacer -verify_depth 4 $param.pem
+openssl verify -CAfile $verify $cer
+
 
