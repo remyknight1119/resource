@@ -13,18 +13,20 @@ file=i.txt
 file=60M
 file=2M
 
-test_dir=data
 tls_version="--tlsv1.3"
 ciphers="--cipher ECDHE-ECDSA-AES128-SHA256:AES256-GCM-SHA384"
 http2=--http2
 http2=
-cd $test_dir
-rm -f *
+servername=example.com
+sni="--resolve $servername:$port:$host"
+#test_dir=data
+#cd $test_dir
+#rm -f *
 
 count=1
 while [ $count -gt 0 ]
 do
     #wget https://$host:$port/$file --no-check-certificate --secure-protocol=TLSv1_2 -t 1 &
-    curl -k -v $http2 $ciphers $tls_version https://$host:$port/$file
+    curl -k -v $sni $http2 $ciphers $tls_version https://$servername:$port/$file
     count=$((count - 1))
 done
