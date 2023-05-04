@@ -13,6 +13,7 @@ set nu
 set encoding=utf-8
 set fileencodings=utf-8,gbk,gb2312,gb18030,ucs-bom,latin1
 
+set fdm=marker
 set tags=tags;
 set shiftwidth=4 
 set ts=4
@@ -107,8 +108,6 @@ endif
 set cst
 set csto=1
 set cscopequickfix=s-,c-,d-,i-,t-,e-,f-
-" cs add /home/yangxl/readcode/cscope-kernel/cscope.out
-" cs add /home/yangxl/readcode/cscope-app/cscope.out
 let Tlist_Enable_Fold_Column = 0
 let Tlist_WinWidth = 30
 let Tlist_Show_One_File = 1
@@ -177,3 +176,4 @@ filetype plugin indent on
 set completeopt=longest,menu
 let g:SuperTabRetainCompletionType=2
 let g:SuperTabDefaultCompletionType="<C-X><C-O>"
+highlight Search term=standout ctermfg=0 ctermbg=11 guifg=Black guibg=Yellow
