@@ -32,7 +32,7 @@ cd -
 #Server cert
 openssl genrsa -out $key $key_bits
 openssl req -new -key $key -sha256 -out $csr -subj $subj -days $expire_days
-openssl x509 -req -in $csr -sha256 -extfile /etc/ssl/openssl.cnf -out $cer -CA $cacer -CAkey $cakey -CAserial t_ssl_ca.srl -CAcreateserial -days $expire_days -extensions v3_req
+openssl x509 -req -in $csr -sha256 -extfile ./openssl.cnf -out $cer -CA $cacer -CAkey $cakey -CAserial t_ssl_ca.srl -CAcreateserial -days $expire_days -extensions v3_req
 #openssl pkcs12 -export -clcerts -in client.cer -inkey client.key -out client.p12
 rm -f *.csr *.srl
 
