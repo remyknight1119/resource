@@ -1,6 +1,6 @@
 [user]
-    name = jason
-    email = jasonchin221@163.com
+    name = remy
+    email = remyknight1119@gmail.com
 
 [alias]
     co = checkout
@@ -18,10 +18,10 @@
     ui = true
 
 [http]
-	sslVerify = false
+    sslVerify = false
 
 [push]
-	default = simple
+    default = simple
 
 [credential]
-	helper = store
+    helper = store
