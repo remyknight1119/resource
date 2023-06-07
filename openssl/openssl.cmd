@@ -34,3 +34,6 @@ openssl rsa -inform pem -in PrivateKey.pem -outform der -out PrivateKey.der
 openssl ec -inform pem -in ecdsa-single.pem -outform der -out ecdsa-single.der
 #Extract public key
 openssl pkey -inform PEM -outform PEM -in rsa-single.pem -pubout -out rsa-single-pub.pem
+
+3 test
+make test TESTS=test_sslapi
