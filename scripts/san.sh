@@ -6,7 +6,7 @@ dir=`dirname $0`
 set -e
 key_bits=1024
 expire_days=3650
-subj=/C="US"/ST="CA"/L="RSA1"/O="Fortinet"/OU="rsaiaaa"/OU="XXX"/CN="domain1.net"
+subj=/C="US"/ST="CA"/L="RSA1"/O="Test"/OU="rsaiaaa"/OU="XXX"/CN="domain1.net"
 ca_name=ca-root
 root_cacer=$ca_name.cer
 root_cakey=$ca_name.key
