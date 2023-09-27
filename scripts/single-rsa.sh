@@ -39,5 +39,4 @@ rm -f *.csr *.srl
 #cat $sub1_cacer $cacer $cer $key |tee $param.pem
 cat $cer $key | tee $param.pem
 echo "===================Gen All OK===================="
-# openssl verify -CAfile ca.cer client.cer
-
+openssl verify -CAfile $root_cacer $param.pem
