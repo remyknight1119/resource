@@ -49,9 +49,8 @@ set -e
 
 #sudo add-apt-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
 #sudo apt-get update
-pkgs=(vim git apache2 vsftpd subversion exuberant-ctags
-wireshark cpanminus git-svn openssh-server
-gitk cscope dos2unix apt-file rdesktop autoconf libtool clang
+pkgs=(vim git apache2 vsftpd subversion exuberant-ctags wireshark cpanminus
+openssh-server cscope dos2unix apt-file rdesktop autoconf libtool clang
 unrar lrzsz pinta wput terminator remmina)
 
 #if [ ! -f /sbin/insserv ]; then 
